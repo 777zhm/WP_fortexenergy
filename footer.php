@@ -8,12 +8,7 @@
 		<?php endif; ?>
 		</div>
 		<nav class="footer_menu">
-			<ul>
-				<li><a href="gas.html">Природний газ</a></li>
-				<li><a href="energy.html">Електроенергія</a></li>
-				<li><a href="spojivacham.html">Споживачам</a></li>
-				<li><a href="contact.html">Контакти</a></li>
-			</ul>
+			<?php wp_nav_menu( array('theme_location' => 'footer_menu') ); ?>
 		</nav>
 	</div>
 	<div class="footer_second_row">
