@@ -1,7 +1,7 @@
 <?php /* Template Name: Main page Template */ ?>
 <?php get_header(); ?>
 <section class="mainscreen">
-	<div class="mainscreen_left" style="background-image: url(<?php assets_url('img/bg-1.jpeg') ?>);">
+	<div class="mainscreen_left" style="background-image: url(<?php assets_url('img/bg-2.jpeg') ?>);">
 		<div class="">
 			<h1>Fortex Energy - ваш надійний партнер</h1>
 			<p>Постачальник енергоносіїв, що розуміє потреби споживачів</p>
