@@ -26,11 +26,17 @@ $('#burger_icon_close').click(function(){
 $('.overlay_menu a').click(function(){
 	closeOverlay();
 });
-
 // End Main menu navigation
-
-
-
+// Start owl carousel config
+$('.partners_slider').owlCarousel({
+	navigation : false,
+	pagination : false,
+      items : 5,
+      itemsDesktop : [1199,4],
+      itemsDesktopSmall : [979,3],
+	autoPlay : 3500
+});
+// End owl carousel config
 
 
 }); //document.ready

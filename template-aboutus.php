@@ -1,4 +1,4 @@
-<?php /* Template Name: About us page Template */ ?>
+<?php /* Template Name: Aboutus page ukr Template */ ?>
 <?php get_header(); ?>
 <section class="aboutus_mainscreen" style="background-image: url(<?php assets_url('img/about_bg.jpg') ?>);">
 	<div>

@@ -1,4 +1,4 @@
-<?php /* Template Name: Main page Template */ ?>
+<?php /* Template Name: Mainpage ukr Template */ ?>
 <?php get_header(); ?>
 <section class="mainscreen">
 	<div class="mainscreen_left" style="background-image: url(<?php assets_url('img/bg-2.jpeg') ?>);">
@@ -61,6 +61,31 @@
 	</div>
 	<div class="change_bottom">
 		<button class="base_btn">Замовити консультацію</button>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row justify-content-center ">
+			<div class="col-lg-10 ">
+				<?php if( have_rows('partners') ): ?>
+					<div class="partners partners_slider">
+						<?php while( have_rows('partners') ): the_row(); 
+							$logotype = get_sub_field('logotype');
+							$logotype_gray = get_sub_field('logotype_gray');
+							?>
+							<div class="partner_item">
+								<?php if($logotype): ?>  
+									<img class="img img-fluid hover" src="<?php echo $logotype['url']; ?>" alt="<?php echo $logotype['alt']; ?>" />
+								<?php endif; ?>
+								<?php if($logotype_gray): ?>  
+									<img class="img img-fluid default" src="<?php echo $logotype_gray['url']; ?>" alt="<?php echo $logotype_gray['alt']; ?>" />
+								<?php endif; ?>
+							</div>
+						<?php endwhile; ?>
+					</div>
+				<?php endif; ?> 
+			</div>
+		</div>
 	</div>
 </section>
 <?php get_footer(); ?>
