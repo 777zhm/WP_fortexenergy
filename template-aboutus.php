@@ -26,8 +26,5 @@
 			<li>Стабільність.</li>
 		</ul>
 	</div>
-	<div class="content_photo_2">
-		<img src="https://picsum.photos/420" alt="about_us_2">
-	</div>
 </section>
 <?php get_footer(); ?>

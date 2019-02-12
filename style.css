@@ -568,33 +568,14 @@ section.aboutus_mainscreen{
 .aboutus_content{
 	display: grid;
 	
-	grid-template-columns: repeat(auto-fil, minmax(320px, 1fr));
-	grid-template-areas:
-			"content_text_1 content_photo_1"
-			"content_photo_2 content_text_2";
-	
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	grid-template-rows: 2;
 	justify-content: center;
 
 	margin-top: 60px;
 	margin-left: 32px;
 	margin-right: 32px;
 	margin-bottom: 46px;
-}
-
-.content_text_1{
-	grid-area: content_text_1;
-}
-
-.content_photo_1{
-	grid-area: content_photo_1;
-}
-
-.content_text_2{
-	grid-area: content_text_2;	
-}
-
-.content_photo_2{
-	grid-area: content_photo_2;
 }
 
 .aboutus_content img{

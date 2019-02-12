@@ -108,4 +108,5 @@ if( function_exists('acf_add_options_page') ){
 	));
 }
 
+include_once 'includes/acf_reg_blocks.php';
 ?>
