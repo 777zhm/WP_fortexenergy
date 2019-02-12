@@ -7,6 +7,7 @@ add_theme_support( 'custom-logo' );
 add_action('after_setup_theme', function(){
 	register_nav_menus( array(
 		'main_menu' => 'Main menu',
+		'lang_menu' => 'Language menu',
 		'burger_menu' => 'Burger menu',
 		'footer_menu' => 'Footer menu'
 	) );
@@ -23,7 +24,7 @@ remove_filter( 'the_excerpt', 'wpautop' );
  * Enqueue theme scripts and styles.
  */
 
-function fortexenergy_scripts() {
+function theme_scripts() {
 	// Styles
 	wp_enqueue_style( 'bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', array(), '4.2.1' );
 	wp_enqueue_style( 'owl-carousel-style', get_template_directory_uri().'/assets/js/owl/owl.carousel.min.css' );
@@ -43,13 +44,13 @@ function fortexenergy_scripts() {
    
 	wp_enqueue_script('main_js', get_template_directory_uri()."/assets/js/main.js", array('jquery'), '', true );
 }
-add_action( 'wp_enqueue_scripts', 'fortexenergy_scripts' );
+add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 /**
  * Add integrity/crossorigin for CDN theme styles.
  */
 
-function fortexenergy_style_loader_tag( $html, $handle ) {
+function theme_style_loader_tag( $html, $handle ) {
 	$scripts_to_load = array(
 		array(
 			( 'name' )      => 'bootstrap-style',
@@ -66,13 +67,13 @@ function fortexenergy_style_loader_tag( $html, $handle ) {
 	}
 	return $html;
 }
-add_filter( 'style_loader_tag', 'fortexenergy_style_loader_tag', 10, 2 );
+add_filter( 'style_loader_tag', 'theme_style_loader_tag', 10, 2 );
 
 /**
  * Add integrity/crossorigin for CDN theme scripts.
  */
 
-function fortexenergy_script_loader_tag( $tag, $handle ) {
+function theme_script_loader_tag( $tag, $handle ) {
 	$scripts_to_load = array(
 		array(
 			( 'name' )      => 'jquery',
@@ -94,7 +95,7 @@ function fortexenergy_script_loader_tag( $tag, $handle ) {
 	return $tag;
 }
 
-add_filter( 'script_loader_tag', 'fortexenergy_script_loader_tag', 10, 2 );
+add_filter( 'script_loader_tag', 'theme_script_loader_tag', 10, 2 );
 
 if( function_exists('acf_add_options_page') ){
 	$parent = acf_add_options_page(array(

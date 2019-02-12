@@ -7,15 +7,25 @@ Version: 1.00
 Text Domain: fortexenergy
 */
 
+/* Start Fonts */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif');
-
+/* End Fonts */
+/* Start Colors */
+.company_color {
+	background: #ffffff;
+	background: #f5f5f5;
+	background: #dcdcdc;
+	background: #8ec642;
+	background: #231f20;
+}
+/* End Colors */
+/* Start Base styles */
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	background-color: #ffffff;
 	color: #231f20;
 }
-
 
 h1, h2, h3, h4, h5, h6{
 	font-family: 'PT Serif', serif;	
@@ -58,16 +68,8 @@ a{
 a:hover{
 	color: inherit;
 }
-
-.company_color {
-	background: #ffffff;
-	background: #f5f5f5;
-	background: #dcdcdc;
-	background: #8ec642;
-	background: #231f20;
-}
-
-/* Start base Grids */
+/* End Base styles */
+/* Start Header */
 header.header {
 	display: grid;
 	grid-template-columns: 150px 1fr 70px;
@@ -79,19 +81,8 @@ header.header {
 .header_logo{
 	text-align: center;	
 }
-
-.burger_icon_box {
-	position: fixed;
-	top: 10px;
-	right: 10px;
-}
-
-.burger_icon {
-	font-size: 34px;
-	cursor: pointer;
-	padding: 10px 16px 10px 16px;
-}
-
+/* End Header */
+/* Start Footer */
 footer.footer{
 	background-color: #fff;
 	padding: 15px;
@@ -106,7 +97,6 @@ footer .footer_first_row{
 	text-align: center;	
 }
 
-
 .footer_second_row {
 	display: grid;
 	justify-content: space-around;
@@ -114,7 +104,6 @@ footer .footer_first_row{
 	grid-template-areas:
 		"footer_address footer_tel footer_schedule";
 }
-
 
 .footer_schedule {
 	grid-area: footer_schedule;
@@ -137,17 +126,8 @@ footer .footer_first_row{
 	font-weight: 700;
 	text-decoration: none;
 }
-
-/* End base Grids */
-/* Start styling Grids */
-
-.test div:nth-child(n){
-	border: 0.2px dashed #8ec642;
-}
-
-
-/* End styling Grids */
-/* Start Menus */
+/* End Footer */
+/* Start Main Menu */
 .main_menu ul {
 	list-style: none;
 	margin: 0;
@@ -199,7 +179,71 @@ footer .footer_first_row{
 .main_menu ul li a:hover:after {
 	width: 100%;
 }
+/* End Main Menu */
+/* Start Mobile Menu */
+.burger_icon_box {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
 
+.burger_icon {
+	font-size: 34px;
+	cursor: pointer;
+	padding: 10px 16px 10px 16px;
+}
+
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #f5f5f5;
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay_menu {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay_menu ul {
+	list-style: none;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .burger_icon_close {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+	cursor: pointer;
+	z-index: 99;
+}
+/* End Mobile Menu */
+/* Start Footer Menu */
 .footer_menu ul {
 	list-style: none;
 	margin: 0;
@@ -251,72 +295,8 @@ footer .footer_first_row{
 .footer_menu ul li a:hover:after {
 	width: 100%;
 }
-
-.overlay {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.9);
-	color: #f5f5f5;
-	overflow-x: hidden;
-	transition: 0.5s;
-}
-
-.overlay_menu {
-	position: relative;
-	top: 25%;
-	width: 100%;
-	text-align: center;
-	margin-top: 30px;
-}
-
-.overlay_menu ul {
-	list-style: none;
-}
-
-.overlay a {
-	padding: 8px;
-	text-decoration: none;
-	font-size: 36px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-	color: #f1f1f1;
-}
-
-.overlay .burger_icon_close {
-	position: absolute;
-	top: 20px;
-	right: 45px;
-	font-size: 60px;
-	cursor: pointer;
-	z-index: 99;
-}
-
-@media screen and (max-height: 450px) {
-	.overlay a {
-		font-size: 20px
-	}
-
-	.overlay .burger_icon_close {
-		font-size: 40px;
-		top: 15px;
-		right: 35px;
-	}
-
-	
-}
-/* End Menus */
+/* End Footer Menu */
 /* Start Buttons */
-
 .base_btn {
 	display: inline-block;
 	padding: 15px 20px;
@@ -345,55 +325,8 @@ footer .footer_first_row{
 .base_btn:focus {
 	outline: #6f9e30 auto 5px;
 }
-
 /* End Buttons */
-/*** Start Mainscreen section ***/
-section.mainscreen {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: #fff;
-	padding: 0;
-}
-
-.mainscreen_left{
-	background: url(img/bg-2.jpeg) left top no-repeat;
-	background-size: cover;
-
-	padding: 30px;
-	min-height: 400px;
-}
-
-.mainscreen_left h1 {
-	font-size: 52px;
-	font-weight: 700;
-	line-height: 1.25;
-	color: #ffffff;
-	width: 100%;
-	margin-top: auto;
-	background-color: rgba(0,0,0,0.6);
-}
-
-.mainscreen_left p {
-	margin-top: 50px;
-	font-size: 22px;
-	line-height: 1.4;
-	color: #ffffff;
-	width: 100%;
-	margin-bottom: auto;
-
-	max-width: 445px;
-	background-color: rgba(0,0,0,0.4);
-}
-
-
-.mainscreen_right{
-	justify-self: center;
-
-	padding-bottom: 40px;
-	padding-left: 18px;
-	padding-right: 18px;
-}
-
+/* Start Forms */
 .form_mainscreen{
 	max-width: 370px;
 }
@@ -442,9 +375,56 @@ section.mainscreen {
 .form_mainscreen .input_box input:focus {
 	border-bottom: 1px solid #8ec642; 
 }
+/* End Forms */
+/********** Start Theme Specific Sections **********/
+/** Start Mainscreen section **/
+section.mainscreen {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #fff;
+	padding: 0;
+}
 
-/*** End Mainscreen section ***/
-/*** Start services section ***/
+.mainscreen_left{
+	background: url(img/bg-2.jpeg) left top no-repeat;
+	background-size: cover;
+
+	padding: 30px;
+	min-height: 400px;
+}
+
+.mainscreen_left h1 {
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #ffffff;
+	width: 100%;
+	margin-top: auto;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.mainscreen_left p {
+	margin-top: 50px;
+	font-size: 22px;
+	line-height: 1.4;
+	color: #ffffff;
+	width: 100%;
+	margin-bottom: auto;
+
+	max-width: 445px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+.mainscreen_right{
+	justify-self: center;
+
+	padding-bottom: 40px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+/** End Mainscreen section **/
+/** Start services section **/
 section.services{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -469,7 +449,6 @@ section.services{
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .services_item h2{
 	align-self: start;
 }
@@ -487,8 +466,8 @@ section.services{
 .services_item button{
 	align-self: end;
 }
-/*** End services section ***/
-/*** Start change_suplier section ***/
+/** End services section **/
+/** Start change_suplier section **/
 section.change_suplier{
 	display: grid;
 	grid-template: repeat(3, auto) / repeat(2, 1fr);
@@ -539,8 +518,8 @@ section.change_suplier{
 	margin-top: 32px;
 	margin-bottom: 20px;
 }
-/*** End change_suplier section ***/
-/*** Start Aboutus page ***/
+/** End change_suplier section **/
+/** Start Aboutus page **/
 section.aboutus_mainscreen{
 	background: url('img/about_bg.jpg') center bottom no-repeat;
 	background-size: cover;
@@ -585,63 +564,25 @@ section.aboutus_mainscreen{
 
   	box-shadow: 0 2px 24px rgba(0, 0, 0, 0.6);
 }
-
-
-
-/*** End Aboutus page ***/
-/*** Start Media query ***/
-
-@media screen and (max-width: 768px) {
-
-	header .main_menu{
-		display: none;
-	}
-
-	footer .footer_menu{
-		display: none;
-	}
-
-	.footer_second_row {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			"footer_address footer_address"
-			"footer_schedule footer_tel";
-	}
+/** End Aboutus page **/
+/********** End Theme Specific Sections **********/
+/* Start Media query */
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
 
 }
-
-@media screen and (max-width: 768px) {
-
-	header .main_menu{
-		display: none;
-	}
-
-	footer .footer_menu{
-		display: none;
-	}
-
-	.footer_second_row {
-		grid-template-columns: 1fr 150px 150px;
-		grid-template-areas:
-			"footer_address footer_tel footer_schedule";
-	}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 
 }
-
-@media screen and (max-width: 576px){
-
-	.footer_second_row {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			"footer_address footer_address"
-			"footer_schedule footer_tel";
-	}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 
 }
-
-@media screen and (max-width: 375px){
-
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
 
 }
-
-/*** End Media query ***/
+/* End Media query */
