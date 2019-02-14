@@ -25,8 +25,9 @@ remove_filter( 'the_excerpt', 'wpautop' );
 function theme_scripts() {
 	// Styles
 	wp_enqueue_style( 'bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css', array(), '4.2.1' );
-	wp_enqueue_style( 'owl-carousel-style', get_template_directory_uri().'/assets/js/owl/owl.carousel.min.css' );
-	wp_enqueue_style( 'owl-carousel-theme-style', get_template_directory_uri().'/assets/js/owl/owl.theme.default.min.css' );
+	wp_enqueue_style( 'owl-carousel-style', get_template_directory_uri().'/assets/js/owl/owl.carousel.css' );
+	wp_enqueue_style( 'owl-carousel-theme-style', get_template_directory_uri().'/assets/js/owl/owl.theme.css' );
+	wp_enqueue_style( 'owl-carousel-transitions-style', get_template_directory_uri().'/assets/js/owl/owl.transitions.css' );
 	wp_enqueue_style( 'fontawesome-style', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );
 
 	wp_enqueue_style( 'main-style', get_stylesheet_uri() );

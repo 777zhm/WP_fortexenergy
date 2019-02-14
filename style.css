@@ -8,8 +8,7 @@ Text Domain: fortexenergy
 */
 
 /* Start Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=cyrillic-ext');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic-ext');
 /* End Fonts */
 /* Start Colors */
 .company_color {
@@ -348,7 +347,6 @@ footer i {
 	outline-color: transparent;
 }
 
-
 .form_mainscreen .input_box{
 	width: 100%;
 	position: relative;
@@ -389,7 +387,7 @@ section.heroscreen{
 }
 
 .main_photo{
-	background: url(img/bg-2.jpeg) center center no-repeat;
+	background: url("") center center no-repeat;
 	background-size: cover;
 	padding: 30px;
 	min-height: 500px;
@@ -419,40 +417,38 @@ section.heroscreen{
 /** End video section **/
 /* Start Partners block */
 .partner_item img{
-	position: absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	margin:auto;
-	max-height: 75px;
-	max-width: 150px;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  max-height: 75px;
+  max-width: 150px;
 }
 
 .partner_item{
-	position: relative;
-	text-align: center;
-	height: 160px;
+  position: relative;
+  text-align: center;
+  height:160px;
 }
 .partner_item img.default{
-	display: inline-block;
+  display: inline-block;
 }
 
 .partner_item img.hover{
-	display: none;
+  display: none;
 }
 
 .partner_item:hover img.default{
-	display: none;
+  display: none;
 }
 
 .partner_item:hover img.hover{
-	display: inline-block;
+  display: inline-block;
 }
 
 /* End Partners block */
-
-
 /** Start Mainscreen section **/
 section.mainscreen {
 	background-color: #fff;
@@ -489,7 +485,6 @@ section.mainscreen {
 	background-color: rgba(0,0,0,0.4);
 }
 
-
 .mainscreen_right{
 	justify-self: center;
 
@@ -500,95 +495,51 @@ section.mainscreen {
 /** End Mainscreen section **/
 /** Start services section **/
 section.services{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
-	text-align: center;
 	background-color: #f5f5f5;
-	padding-top: 60px;
+	padding-top: 46px;
 }
 
 .services_item{
-	display: grid;
-	justify-items:center;
-
-
 	background-color: #ffffff;
-	margin: 0 20px;
 	padding: 5% 20px;
-
-
-	transition: all 0.25s ease-in-out;
-    margin: 0 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.services_item h2{
-	align-self: start;
-}
 
-.services_item .services_subheading{
-	font-size: 22px;
-	align-self: start;
-}
-
-.services_item img{
-	margin-bottom: 22px;
-	align-self: end;
-}
-
-.services_item button{
-	align-self: end;
-}
 /** End services section **/
 /** Start change_suplier section **/
 section.change_suplier{
-	display: grid;
-	grid-template: repeat(3, auto) / repeat(2, 1fr);
-
 	text-align: center;
 	background-color: #f5f5f5;
-
-	padding-bottom: 60px;
+	padding-bottom: 32px;
 }
 
 .change_suplier p{
 	font-size: 18px;
 }
 
-.change_suplier .change_heading {
-	grid-column: 1 / -1;
-	grid-row: 1;
-
-	justify-self: center;
+.change_heading {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 .change_heading p{
 	font-size: 22px;
-
 }
 
-.change_suplier .change_left{
-	min-height: 180px;
-
+.change_left{
 	background-color: #ffffff;
 	text-align: center;
 	padding: 16px;
 }
 
-.change_suplier .change_right{
+.change_right{
 	background-color: #dcdcdc;
 	text-align: center;
 	padding: 16px;
 }
 
-.change_suplier .change_bottom {
-	grid-column: 1 / -1;
-	grid-row: 3;
-
-	justify-self: center;
+.change_bottom {
 	margin-top: 32px;
 	margin-bottom: 20px;
 }

@@ -30,7 +30,7 @@ function my_acf_init() {
         acf_register_block(array(
             'name'              => 'partners',
             'title'             => __('Partners fortex'),
-            'description'       => __('A custom technologies block.'),
+            'description'       => __('A custom partners block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
             'icon'              => 'admin-site',

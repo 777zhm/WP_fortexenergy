@@ -23,9 +23,9 @@
 			</div>
 			<div class="col-md-3 footer_tel">
 				<p><i class="fas fa-phone"></i>&nbsp;<a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
-				<p><i class="far fa-envelope"></i>&nbsp;<a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</p>
+				<p><i class="far fa-envelope"></i>&nbsp;<a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
 			</div>
-			<div class="col-md-1 d-none d-md-block">
+			<div class="col-md-1 d-none d-md-block ">
 				<div class="rhomb"></div>	
 			</div>
 		</div>
