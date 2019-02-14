@@ -7,9 +7,7 @@ add_theme_support( 'custom-logo' );
 add_action('after_setup_theme', function(){
 	register_nav_menus( array(
 		'main_menu' => 'Main menu',
-		'lang_menu' => 'Language menu',
-		'burger_menu' => 'Burger menu',
-		'footer_menu' => 'Footer menu'
+		'lang_menu' => 'Language menu'
 	) );
 });
 

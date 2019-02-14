@@ -1,12 +1,15 @@
 <?php /* Template Name: Dispute page ukr Template */ ?>
 <?php get_header(); ?>
 
-<section>
+<section class="dispute_page_section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 dispute_page_row">
 	<div class="accordion" id="disputeAccordion">
 		<div class="card">
 			<div class="card-header" id="headingOne">
 				<h5 class="mb-0">
-					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						Права та обов&#8217;язки Споживача
 					</button>
 				</h5>
@@ -14,7 +17,7 @@
 			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#disputeAccordion">
 				<div class="card-body">
 					<p>Права споживача:</p>
-					<ul>
+					<ul class="docs_list">
 						<li>на отримання природного газу в обсягах, визначених договором постачання природного газу, за умови дотримання його умов;</li>
 						<li>на одночасне укладення декількох договорів постачання природного газу, якщо його річний обсяг споживання природного газу перевищує 30 млн куб. метрів;</li>
 						<li>на безкоштовне отримання інформації щодо цін постачальника на природний газ та порядку оплати;</li>
@@ -23,7 +26,7 @@
 						<li>інші права, передбачені цими Правилами та чинним законодавством. *</li>
 					</ul>
 					<p>Обов&#8217;язки споживача:</p>
-					<ul>
+					<ul class="docs_list">
 						<li>дотримуватись вимог цих Правил;</li>
 						<li>забезпечувати дотримання дисципліни відбору (споживання) природного газу в обсягах та на умовах, визначених договорами;</li>
 						<li>своєчасно та в повному обсязі сплачувати за поставлений природний газ на умовах, визначених договорами;</li>
@@ -44,7 +47,7 @@
 		<div class="card">
 			<div class="card-header" id="headingTwo">
 				<h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 						Права та обов’язки Постачальника
 					</button>
 				</h5>
@@ -52,7 +55,7 @@
 			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#disputeAccordion">
 				<div class="card-body">
 					<p>Права постачальника:</p>
-					<ul>
+					<ul class="docs_list">
 						<li>укласти договір постачання природного газу з будь-яким споживачем та за відсутності простроченої заборгованості споживача за природний газ перед діючим постачальником поставити природний газ споживачу в періоді, наступному після періоду постачання природного газу діючим постачальником;</li>
 						<li>отримувати від споживача своєчасну оплату за природний газ відповідно до умов договору;</li>
 						<li>на безперешкодний доступ (за пред’явленням службового посвідчення) до комерційних вузлів обліку природного газу, що встановлені на об’єктах газоспоживання споживача, для звірки даних фактичного споживання природного газу;</li>
@@ -61,7 +64,7 @@
 						<li>інші права, передбачені цими Правилами та чинним законодавством. *</li>
 					</ul>
 					<p>Обов&#8217;язки постачальника:</p>
-					<ul>
+					<ul class="docs_list">
 						<li>дотримуватись вимог цих Правил;</li>
 						<li>забезпечувати постачання природного газу на умовах та в обсягах, визначених договором на постачання природного газу, за умови дотримання споживачем дисципліни відбору природного газу та розрахунків за нього;</li>
 						<li>забезпечувати подання всіх необхідних документів для підтвердження Оператором ГТС необхідного<br>
@@ -78,7 +81,7 @@
 		<div class="card">
 			<div class="card-header" id="headingThree">
 				<h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					<button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 						Умови постачання природного газу
 					</button>
 				</h5>
@@ -93,7 +96,7 @@
 		<div class="card">
 			<div class="card-header" id="headingFour">
 				<h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					<button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 						Врегулювання спорів та суперечок
 					</button>
 				</h5>
@@ -112,6 +115,9 @@
 	</div>
 	<p><a href="http://zakon3.rada.gov.ua/laws/show/z1382-15"><strong>* Постанова про затвердження правил постачання природного газу № 2496 (30.09.2015)</strong></a></p>
 	<p><strong>** Закон України <a href="http://zakon2.rada.gov.ua/laws/show/329-19">&#8220;Про ринок природного газу&#8221;</a></strong></p>
+			</div>
+		</div>
+	</div>
 </section>
 
 <?php get_footer(); ?>

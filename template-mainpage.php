@@ -1,13 +1,18 @@
 <?php /* Template Name: Mainpage ukr Template */ ?>
 <?php get_header(); ?>
-<section class="mainscreen">
-	<div class="mainscreen_left" style="background-image: url(<?php assets_url('img/bg-2.jpeg') ?>);">
-		<div class="">
-			<h1>Fortex Energy - ваш надійний партнер</h1>
-			<p>Постачальник енергоносіїв, що розуміє потреби споживачів</p>
+
+<section class="heroscreen" style="background-image: url(<?php assets_url('img/bg-2.jpeg') ?>);">
+	<div class="container-fluid">
+		<div class="row main_photo text-center">
+		
+				<h1 class="align-middle">Fortex Energy - Ваш надійний партнер</h1>
+				<h4>Постачальник енергоносіїв, що розуміє потреби споживачів</h4>
+
 		</div>
 	</div>
-	<div class="mainscreen_right">
+</section>
+<section class="services">
+	<div class="services_item">
 		<form id="form_mainscreen" class="form_mainscreen">
 			<h3>Отримайте персональну консультацію</h3>
 			<div class="input_box">
@@ -27,19 +32,25 @@
 			</button>
 		</form>
 	</div>
-</section>
-<section class="services">
 	<div class="services_item">
-		<h2>Кредит на оплату енергоносіїв</h2>
-		<p class="services_subheading">Оплатіть за газ в кредит та отримайте ціну попередньої оплати</p>
-		<img src="<?php assets_url('img/service_2.svg') ?>" class="service_1" alt="service_1">
-		<button class="base_btn">Підключити</button>
-	</div>
-	<div class="services_item">
-		<h2>Зафіксуйте літню ціну</h2>
-		<p class="services_subheading">Отримайте газ за літньою ціною на опалювальний сезон з жовтня по березень</p>
-		<img src="<?php assets_url('img/service_2.svg') ?>" class="service_2" alt="service_2">
-		<button class="base_btn">Зафіксувати ціну</button>
+		<form id="form_mainscreen" class="form_mainscreen">
+			<h3>Отримайте персональну консультацію</h3>
+			<div class="input_box">
+				<input id="fi_1" type="text" name="edrpou" placeholder="" data-placeholder="12345678">
+				<label for="fi_1" unselectable="on">ЄДРПОУ</label>
+			</div>
+			<div class="input_box">
+				<input id="fi_2" type="text" name="email"  placeholder="" data-placeholder="your.email@email.com">
+				<label for="fi_2" unselectable="on">Електронна адреса</label>
+			</div>
+			<div class="input_box">
+				<input id="fi_3" type="text"  name="phone"  placeholder="" data-placeholder="+380 00 123 5678">
+				<label for="fi_3" unselectable="on">Телефон</label>
+			</div>
+			<button type="submit" class="base_btn">
+				<span>Зробити запит</span>
+			</button>
+		</form>
 	</div>
 </section>
 <section class="change_suplier">
@@ -64,28 +75,18 @@
 	</div>
 </section>
 <section>
-	<div class="container">
-		<div class="row justify-content-center ">
-			<div class="col-lg-10 ">
-				<?php if( have_rows('partners') ): ?>
-					<div class="partners partners_slider">
-						<?php while( have_rows('partners') ): the_row(); 
-							$logotype = get_sub_field('logotype');
-							$logotype_gray = get_sub_field('logotype_gray');
-							?>
-							<div class="partner_item">
-								<?php if($logotype): ?>  
-									<img class="img img-fluid hover" src="<?php echo $logotype['url']; ?>" alt="<?php echo $logotype['alt']; ?>" />
-								<?php endif; ?>
-								<?php if($logotype_gray): ?>  
-									<img class="img img-fluid default" src="<?php echo $logotype_gray['url']; ?>" alt="<?php echo $logotype_gray['alt']; ?>" />
-								<?php endif; ?>
-							</div>
-						<?php endwhile; ?>
-					</div>
-				<?php endif; ?> 
-			</div>
-		</div>
-	</div>
-</section>
+      <div class="container">
+        <div class="row justify-content-center ">
+          <div class="col-lg-10 ">
+            <div class="partners partners_slider">
+              <div class="partner_item">
+                <img src="<?php assets_url('img/partners/cheaseclub-logo.png') ?>" alt="" class="img img-fluid hover ">
+                <img src="<?php assets_url('img/partners/cheaseclub-logo-gray.png') ?>" alt="" class="img img-fluid default">
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <?php get_footer(); ?>

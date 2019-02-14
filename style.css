@@ -8,33 +8,33 @@ Text Domain: fortexenergy
 */
 
 /* Start Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=cyrillic-ext');
+
 /* End Fonts */
 /* Start Colors */
 .company_color {
 	background: #ffffff;
 	background: #f5f5f5;
 	background: #dcdcdc;
-	background: #8ec642;
+	background: #8ec642; /* rgb(142,198,66); */
 	background: #231f20;
 }
 /* End Colors */
 /* Start Base styles */
-body {
+
+body {	
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	background-color: #ffffff;
 	color: #231f20;
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: 'PT Serif', serif;	
 	color: #000000;
 }
 
 h1{
 	font-size: 36px;
-	text-transform: uppercase;
 }
 
 h2{
@@ -62,30 +62,42 @@ ul, ol{
 }
 
 a{
+	color: #000000;
 	text-decoration: none;
 }
 
 a:hover{
 	color: inherit;
+	text-decoration-color: #8ec642;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
 }
 /* End Base styles */
 /* Start Header */
 header.header {
-	display: grid;
-	grid-template-columns: 150px 1fr 70px;
-
 	background-color: #fff;
 	padding: 15px;
+	box-shadow: inset 0px 2px 20px 0px rgba(142, 198, 66, 0.5);
 }
 
 .header_logo{
-	text-align: center;	
+	text-align: left;
 }
+
+.header_logo img{
+	max-height: 75px;
+	width: auto;
+}
+
 /* End Header */
 /* Start Footer */
 footer.footer{
 	background-color: #fff;
 	padding: 15px;
+	box-shadow: inset 0px 2px 20px 0px rgba(142, 198, 66, 0.5);
 }
 
 footer .footer_first_row{
@@ -97,37 +109,61 @@ footer .footer_first_row{
 	text-align: center;	
 }
 
+.footer_logo img{
+	max-height: 75px;
+	width: auto;
+}
+
 .footer_second_row {
-	display: grid;
-	justify-content: space-around;
-	grid-template-columns: 220px 160px 160px;
-	grid-template-areas:
-		"footer_address footer_tel footer_schedule";
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
-.footer_schedule {
-	grid-area: footer_schedule;
-	justify-self: center;
+.footer_schedule p {
+	margin-bottom: 2px;
 }
 
-.footer_address {
-	grid-area: footer_address;
-
+.footer_address p {
+	margin-bottom: 2px;
 }
 
-.footer_tel {
-	grid-area: footer_tel;
-	justify-self: center;
+.footer_tel p {
+	margin-bottom: 2px;
+	font-size: 16px;
 }
 
 .footer_tel a{
 	color: #000000;
 	font-size: 16px;
-	font-weight: 700;
+
 	text-decoration: none;
 }
+
+
+footer i {
+	color: #8ec642;
+}
+
+
+.hidden_icon{
+	visibility: hidden;
+}
+
+
+.rhomb{
+    background-color: #8ec642;
+    height:90px;
+    width: 16px;
+    -webkit-transform: rotate(0deg) skew(-35deg, 0deg);
+    text-align: left;
+}
+
+
 /* End Footer */
 /* Start Main Menu */
+.main_menu{
+	text-align: center;
+}
 .main_menu ul {
 	list-style: none;
 	margin: 0;
@@ -146,12 +182,13 @@ footer .footer_first_row{
 	position: relative;
 	
 	color: #000000;
+
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	padding: 5px 0 5px;
 }
 
@@ -188,7 +225,7 @@ footer .footer_first_row{
 }
 
 .burger_icon {
-	font-size: 34px;
+	font-size: 30px;
 	cursor: pointer;
 	padding: 10px 16px 10px 16px;
 }
@@ -238,64 +275,23 @@ footer .footer_first_row{
 	position: absolute;
 	top: 20px;
 	right: 45px;
-	font-size: 60px;
+	font-size: 50px;
 	cursor: pointer;
 	z-index: 99;
 }
 /* End Mobile Menu */
-/* Start Footer Menu */
-.footer_menu ul {
-	list-style: none;
-	margin: 0;
-	padding-top: 10px;
-	padding-left: 10px;
-	overflow: hidden;
-}
-
-.footer_menu ul li {
-	display: inline-block;
-	margin-right: 12px;
-}
-
-.footer_menu ul li a {
-	display: inline-block;
-	position: relative;
-	
-	color: #000000;
+/* Start Language Menu */
+.lang_menu{
 	text-align: center;
-
-	text-decoration: none;
-
-	font-size: 16px;
-	font-weight: 400;
-	padding: 5px 0 5px;
 }
 
-.footer_menu ul li a:after {
-	content: '';
+.lang_menu ul li{
 	display: inline-block;
-	position: absolute;
-	
-	bottom: 0;
-	left: 0;
-	border-bottom: 1px solid #8ec642;
-	border-radius: 2px;
-
-	width: 0%;
-	-webkit-transition: all 0.4s ease-out;
-	-moz-transition: all 0.4s ease-out;
-	-o-transition: all 0.4s ease-out;
-	transition: all 0.4s ease-out;
+	padding: 12px;
 }
 
-.footer_menu ul li a:hover {
-	color: #8ec642;
-}
 
-.footer_menu ul li a:hover:after {
-	width: 100%;
-}
-/* End Footer Menu */
+/* End Language Menu */
 /* Start Buttons */
 .base_btn {
 	display: inline-block;
@@ -324,6 +320,16 @@ footer .footer_first_row{
 
 .base_btn:focus {
 	outline: #6f9e30 auto 5px;
+}
+
+.base_btn a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.base_btn a:hover{
+	color: #ffffff;
+	text-decoration: none;
 }
 /* End Buttons */
 /* Start Forms */
@@ -377,10 +383,78 @@ footer .footer_first_row{
 }
 /* End Forms */
 /********** Start Theme Specific Sections **********/
+section.heroscreen{
+	background-color: #fff;
+	padding: 0;	
+}
+
+.main_photo{
+	background: url(img/bg-2.jpeg) center center no-repeat;
+	background-size: cover;
+	padding: 30px;
+	min-height: 500px;
+}
+
+.main_photo h1 {
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #ffffff;
+	width: 100%;
+	margin-top: auto;
+/*	background-color: rgba(0,0,0,0.6);*/
+}
+
+.main_photo h4 {
+	font-size: 22px;
+	color: #ffffff;
+	width: 100%;
+	line-height: 1.25;
+	margin-bottom: auto;
+/*	background-color: rgba(0,0,0,0.4);*/
+}
+
+/** Start video section **/
+
+/** End video section **/
+/* Start Partners block */
+.partner_item img{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	max-height: 75px;
+	max-width: 150px;
+}
+
+.partner_item{
+	position: relative;
+	text-align: center;
+	height: 160px;
+}
+.partner_item img.default{
+	display: inline-block;
+}
+
+.partner_item img.hover{
+	display: none;
+}
+
+.partner_item:hover img.default{
+	display: none;
+}
+
+.partner_item:hover img.hover{
+	display: inline-block;
+}
+
+/* End Partners block */
+
+
 /** Start Mainscreen section **/
 section.mainscreen {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
 	background-color: #fff;
 	padding: 0;
 }
@@ -537,6 +611,8 @@ section.aboutus_mainscreen{
 .aboutus_mainscreen h2{
 	font-size: 40px;
 	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .aboutus_mainscreen p{
@@ -544,27 +620,91 @@ section.aboutus_mainscreen{
 	color: #ffffff;
 }
 
-.aboutus_content{
-	display: grid;
-	
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-	grid-template-rows: 2;
-	justify-content: center;
-
-	margin-top: 60px;
-	margin-left: 32px;
-	margin-right: 32px;
-	margin-bottom: 46px;
+.aboutus_page_section{
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
-.aboutus_content img{
-	width: 100%;
-  	height: auto;
-  	max-width: 460px;
 
-  	box-shadow: 0 2px 24px rgba(0, 0, 0, 0.6);
+.aboutus_page_section ul{
+	padding-left: 0px;
 }
 /** End Aboutus page **/
+/** Start Gas/Energy page **/
+.gas_page_section, .energy_page_section{
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.buttons_box{
+	padding-top: 26px;
+	padding-bottom: 26px;
+}
+
+.docs_list li:before{
+	content: "🗸";
+	margin-right: 8px;
+	color: #8ec642;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.docs_list li:hover:before{
+	content: "🗸";
+	margin-right: 8px;
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.docs_list li a:hover{
+	text-decoration-color: #8ec642;
+}
+
+/** End Gas/Energy page **/
+/** Start Dispute page **/
+.dispute_page_section{
+	padding-bottom: 32px;	
+}
+
+.dispute_page_row{
+	padding-left: 26px;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    color: inherit;
+    background-color: rgba(142,198,66, .03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+
+/** End Dispute page **/
+/** Start Contact page **/
+.contact_page_section{
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.contact_tel a{
+	color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact_schedule p {
+	margin-bottom: 2px;
+}
+
+.contact_address{
+	margin-bottom: 16px;
+}
+.contact_address p{
+	margin-bottom: 2px;
+}
+
+/** End Contact page **/
 /********** End Theme Specific Sections **********/
 /* Start Media query */
 /* Extra small devices (portrait phones, less than 576px) */
