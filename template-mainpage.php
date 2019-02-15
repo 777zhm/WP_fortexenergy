@@ -5,23 +5,33 @@
 	<div class="container-fluid">
 		<div class="row justify-content-center fadein_box">
 			<div class="col-sm-12 hero_text_box">
+				<!-- <h1 class="align-middle">Fortex Energy - Ваш надійний партнер</h1>
+				<p>Постачальник енергоносіїв, що розуміє потреби споживачів</p> -->
+			</div>
+		</div>
+	</div>
+</section>
+<section class="second_screen">
+	<div class="container">
+		<div class="row justify-content-center fadein_box">
+			<div class="col-sm-12 text-center">
 				<h1 class="align-middle">Fortex Energy - Ваш надійний партнер</h1>
 				<p>Постачальник енергоносіїв, що розуміє потреби споживачів</p>
 			</div>
 		</div>
 	</div>
 </section>
+
 <section>
 	<div class="form_section" id="form">
 		<div class="container">
-
 			<div class="row">
 				<div class="col-lg-7 col-md-6 equal">
-					<div class="contact_form_box_2">   
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eius commodi consequatur asperiores, eaque ullam, recusandae, culpa at omnis voluptate saepe. Quae odio obcaecati placeat doloribus veritatis adipisci, sint quos!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eius commodi consequatur asperiores, eaque ullam, recusandae, culpa at omnis voluptate saepe. Quae odio obcaecati placeat doloribus veritatis adipisci, sint quos!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eius commodi consequatur asperiores, eaque ullam, recusandae, culpa at omnis voluptate saepe. Quae odio obcaecati placeat doloribus veritatis adipisci, sint quos!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eius commodi consequatur asperiores, eaque ullam, recusandae, culpa at omnis voluptate saepe. Quae odio obcaecati placeat doloribus veritatis adipisci, sint quos!</p>
+					<div class="contact_form_box_2 text-center">   
+						<h3>Як змінити постачальника енергоносіїв?</h3>
+						<p class="change_subheading">Ви можете отримати кращі тарифи</p>
+						
+						<button class="change_button base_btn text-center">Дізнатись тариф</button>
 					</div>
 				</div>
 				<div class="col-lg-5 col-md-6 equal">     
@@ -51,24 +61,6 @@
 		</div>
 	</div>
 </section>
-<section class="change_suplier">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-12 change_heading">
-				<h2>Як змінити постачальника енергоносіїв?</h2>
-				<p>Ви можете отримати кращі тарифи</p>
-			</div>
-			<div class="col-6 change_bottom">
-				<button class="base_btn">Дізнатись тариф</button>
-			</div>
-			<div class="col-6 change_bottom">
-				<button class="base_btn">Замовити консультацію</button>
-			</div>
-			
-		</div>
-	</div>
-</section>
-
 <section>
 	<div class="container">
 		<div class="row justify-content-center ">

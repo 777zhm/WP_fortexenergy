@@ -370,13 +370,11 @@ footer .telephone_icon{
 
 .form_section h3{
   color: #8ec642; 
-  font-family: "Source Sans Pro";
   margin-bottom: 20px;
 }
 
 .form_section p{
   color: #999999;
-  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -394,7 +392,6 @@ footer .telephone_icon{
 
 .form_section .contact_item p{
   color: #999999;
-  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -424,15 +421,28 @@ footer .telephone_icon{
 }
 
 .contact_form_box_2{
-  background-color: #ffffff;
-  color: #000;
- padding: 50px;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	color: #000;
+	padding: 50px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
 }
 
 .contact_form_box_2 p{
   color: #000;
+}
+
+.contact_form_box_2 .change_subheading {
+	font-size: 20px;
+}
+
+.contact_form_box_2 .change_button{
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .contact_form input, .contact_form textarea{
@@ -459,13 +469,14 @@ textarea{
 
 /* End Forms */
 /********** Start Theme Specific Sections **********/
+/* End heroscreen block */
 section.heroscreen{
 	background-color: #fff;
 	padding: 0;	
 	background: url("") center bottom no-repeat;
 	background-size: cover;
 	padding: 30px;
-	min-height: 500px;
+	min-height: 360px;
 }
 
 .hero_text_box{
@@ -480,7 +491,7 @@ section.heroscreen{
 	font-weight: 700;
 
 	color: #080808;
-	background-color: rgba(255,255,255, 0.3);
+
 }
 
 .heroscreen p {
@@ -488,9 +499,27 @@ section.heroscreen{
 	font-size: 22px;
 	color: #080808;
 
-	background-color: rgba(255,255,255, 0.3);
+}
+/* End heroscreen block */
+/* Start second_screen block */
+.second_screen{
+	padding-top: 26px;
+	padding-bottom: 26px;
+}
+.second_screen h1{
+	font-size: 52px;
+	font-weight: 700;
+
+	color: #080808;
 }
 
+.second_screen p{
+	font-size: 22px;
+	color: #080808;
+}
+
+
+/* End second_screen block */
 /* Start Partners block */
 .partner_item img{
   position: absolute;
@@ -510,56 +539,6 @@ section.heroscreen{
 }
 
 /* End Partners block */
-/** Start services section **/
-section.services{
-	background-color: #f5f5f5;
-	padding-top: 46px;
-}
-
-.services_item{
-	background-color: #ffffff;
-	padding: 5% 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/** End services section **/
-/** Start change_suplier section **/
-section.change_suplier{
-	text-align: center;
-	background-color: #f5f5f5;
-	padding-bottom: 32px;
-}
-
-.change_suplier p{
-	font-size: 18px;
-}
-
-.change_heading {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.change_heading p{
-	font-size: 22px;
-}
-
-.change_left{
-	background-color: #ffffff;
-	text-align: center;
-	padding: 16px;
-}
-
-.change_right{
-	background-color: #dcdcdc;
-	text-align: center;
-	padding: 16px;
-}
-
-.change_bottom {
-	margin-top: 16px;
-	margin-bottom: 20px;
-}
-/** End change_suplier section **/
 /** Start Aboutus page **/
 section.aboutus_mainscreen{
 	background: url('img/about_bg.jpg') center bottom no-repeat;
