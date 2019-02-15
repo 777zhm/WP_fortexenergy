@@ -16,13 +16,17 @@
 		<div class="row">
 			<div class="col-2 header_logo">
 				<?php if ( has_custom_logo() ) : ?>
-				<?php the_custom_logo(); ?>
+				<?php
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+				?> 
+				<a href="https://fortexenergy.com"><img class="img img-fluid" src="<?php echo $image[0]; ?>" alt="logotype"></a>
 				<?php endif; ?>	
 			</div>
-			<div class="col-8 main_menu">
+			<div class="col-lg-8 col-md-7 main_menu d-none d-md-block">
 				<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
 			</div>
-			<div class="col-2 lang_menu">
+			<div class="col-lg-2 col-md-3 col-sm-4 lang_menu">
 				<?php wp_nav_menu( array('theme_location' => 'lang_menu') ); ?>
 			</div>
 			<div class="d-sm-none burger_icon_box" id="burger_icon_box"><span class="burger_icon">&#9776;</span></div>
