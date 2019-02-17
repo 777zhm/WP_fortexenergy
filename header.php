@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	
-	<title><?php wp_title(); ?></title>
+	<title><?php bloginfo( 'name' ); echo " | "; the_title(); ?></title>
 	<?php wp_head(); ?>
 </head>
 
