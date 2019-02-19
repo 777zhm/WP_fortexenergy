@@ -1,6 +1,6 @@
 <?php /* Template Name: Aboutus page ukr Template */ ?>
 <?php get_header(); ?>
-<section class="aboutus_mainscreen" style="background-image: url(<?php assets_url('img/about_bg.jpg') ?>);">
+<section class="aboutus_mainscreen">
 	<div class="fadein_box">
 		<h2>Fortex Energy</h2>
 		<p>Сучасна енергетична компанія, що розуміє потреби споживачів</p>

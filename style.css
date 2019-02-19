@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 Theme Name: Fortexenergy
 Author: Zhmurko Yuriy
@@ -190,6 +191,13 @@ footer .telephone_icon{
 
 /* End Footer */
 /* Start Main Menu */
+.menu-holovne-meniu-ukr-container{
+	margin-top: 12px;
+
+}
+
+
+
 .main_menu{
 	text-align: center;
 }
@@ -204,6 +212,7 @@ footer .telephone_icon{
 .main_menu ul li {
 	display: inline-block;
 	margin-right: 12px;
+	
 }
 
 .main_menu ul li a {
@@ -544,30 +553,34 @@ section.aboutus_mainscreen{
 	background: url('img/about_bg.jpg') center bottom no-repeat;
 	background-size: cover;
 	color: #ffffff;
-	min-height: 360px;
+	
 
 	padding-left: 15%;
 	padding-right: 15%;
 	padding-top: 5%;
-	padding-bottom: 5%;
+	/*padding-bottom: 5%;*/
 
 	text-align: center;
+	/*min-height: 360px;*/
 }
 
 .aboutus_mainscreen h2{
 	font-size: 40px;
-	color: #ffffff;
+	
 	text-transform: uppercase;
 	font-weight: 600;
+	/*color: #ffffff;*/
+	color: #8ec642;
 }
 
 .aboutus_mainscreen p{
 	font-size: 22px;
-	color: #ffffff;
+	/*color: #ffffff;*/
+	color: #8ec642;
 }
 
 .aboutus_page_section{
-	padding-top: 32px;
+	padding-top: 16px;
 	padding-bottom: 32px;
 }
 
@@ -616,7 +629,8 @@ section.aboutus_mainscreen{
 }
 
 .docs_list li:before{
-	content: "🗸";
+	content: "✓";
+	/*content: "\1F5F8";*/
 	margin-right: 8px;
 	color: #8ec642;
 	font-size: 18px;
@@ -624,7 +638,6 @@ section.aboutus_mainscreen{
 }
 
 .docs_list li:hover:before{
-	content: "🗸";
 	margin-right: 8px;
 	color: #000;
 	font-size: 18px;
