@@ -31,7 +31,7 @@ $('.overlay_menu a').click(function(){
 		$('.partners_slider').owlCarousel({
 			navigation : false,
 			pagination : false,
-		      items : 5,
+		      items : 4,
 		      itemsDesktop : [1199,4],
 		      itemsDesktopSmall : [979,3],
 			autoPlay : 3500

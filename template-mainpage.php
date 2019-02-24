@@ -1,111 +1,130 @@
 <?php /* Template Name: Mainpage ukr Template */ ?>
 <?php get_header(); ?>
 
-<section class="heroscreen" style="background-image: url(<?php assets_url('img/bg_sky.jpg') ?>);">
+<section class="heroscreen_section">
 	<div class="container-fluid">
 		<div class="row justify-content-center fadein_box">
-			<div class="col-sm-12 hero_text_box">
-				<!-- <h1 class="align-middle">Fortex Energy - Ваш надійний партнер</h1>
-				<p>Постачальник енергоносіїв, що розуміє потреби споживачів</p> -->
+			<div class="col-md-7">
+				<h2 class="align-middle">Надійний постачальник газу українським та закордонним споживачам</h2>
+				<p>Сучасна енергетична компанія - Постачальник енергоносіїв, що розуміє потреби споживачів</p>
+				<button class="change_button base_btn text-center">Дізнатись тарифи</button>
+				<button class="change_button base_btn text-center">Консультація</button>
+			</div>
+			<div class="col-md-5">
+				
 			</div>
 		</div>
 	</div>
 </section>
-<section class="second_screen">
+<section class="company_section">
 	<div class="container">
-		<div class="row justify-content-center fadein_box">
-			<div class="col-sm-12 text-center">
-				<h1 class="align-middle">Fortex Energy - Ваш надійний партнер</h1>
-				<p>Постачальник енергоносіїв, що розуміє потреби споживачів</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="form_section" id="form">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 col-md-6 equal">
-					<div class="contact_form_box_2 text-center">   
-						<h3>Як змінити постачальника енергоносіїв?</h3>
-						<p class="change_subheading">Ви можете отримати кращі тарифи</p>
-						
-						<button class="change_button base_btn text-center">Дізнатись тариф</button>
-					</div>
-				</div>
-				<div class="col-lg-5 col-md-6 equal">     
-					<div class="contact_form_box">
-						<form id="contact_form" action="" method="post" class="contact_form">
-							<div class="row justify-content-center">
-								<div class="col-lg-9 col-10">
-									<h3 class="text-center">Отримайте персональну консультацію</h3>
-								</div>
-								<div class="col-lg-9 col-10">
-									<input type="text" class="form-control" id="user_name" name="user_name" placeholder="ЄДРПОУ" required>
-								</div>
-								<div class="col-lg-9 col-10">
-									<input type="email" class="form-control" id="user_email" name="user_email" placeholder="Електронна адреса" required>
-								</div>
-								<div class="col-lg-9 col-10">
-									<input type="email" class="form-control" id="user_email" name="user_email" placeholder="Телефон" required>
-								</div>
-								<div class="col-lg-9 col-10 submit_button_box">
-									<button type="submit" class="base_btn">Зробити запит</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section>
-	<div class="container">
-		<div class="row justify-content-center ">
+		<div class="row">
 			<div class="col-lg-12">
+				<h2 class="text-center">Наша компанія</h2>
+				<p>Стратегічною метою нашої компанії є лідерство серед глобальних енергетичних компаній Європи за допомогою диверсифікації ринків збуту, забезпечення надійності поставок та зростання ефективності діяльності.</p>
+			</div>
+			<div class="col-lg-4">
+				<div class="company-item">
+					<h3>Місія</h3>
+					<p>Наша місія полягає в  надійному,ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="company-item">
+					<h3>Мета</h3>
+					<p>Наша мета полягає в  надійному,ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="company-item">
+					<h3>Цінності</h3>
+					<p>Наші цінності полягають в  надійному,ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="products_section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="text-center">Наша продукція</h2>
+				<p>Стратегічною метою нашої компанії є лідерство серед глобальних енергетичних компаній Європи за допомогою диверсифікації ринків збуту, забезпечення надійності поставок та зростання ефективності діяльності.</p>
+			</div>
+			<div class="col-lg-6">
+				<div class="product_item">
+					<h3>Електрична енергія</h3>
+					<h4>Нормативні документи</h4>
+					<h4>Комерційні документи</h4>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="product_item">
+					<h3>Природний газ</h3>
+					<h4>Нормативні документи</h4>
+					<h4>Комерційні документи</h4>
+					<button>Перевірте ваш EIC-код</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="partners_section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<h2 class="text-center">Наші партнери</h2>
+				<p>Стратегічною метою нашої компанії є лідерство серед глобальних енергетичних компаній Європи за допомогою диверсифікації ринків збуту, забезпечення надійності поставок та зростання ефективності діяльності.</p>
 				<div class="partners partners_slider">
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-arcelor.png') ?>" alt="arcelor" />			
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-arcelor.png') ?>" alt="arcelor" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/terrafood-logo.png') ?>" alt="terrafood" />		
+						<img class="img img-fluid" src="<?php assets_url('img/partners/kamelia-logo.png') ?>" alt="kamelia" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/komo-logo.png') ?>" alt="komo" />			
+						<img class="img img-fluid" src="<?php assets_url('img/partners/komo-logo.png') ?>" alt="komo" />	
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/galicia-logo.png') ?>" alt="galicia" />				
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-volin.jpg') ?>" alt="volin" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/kamelia-logo.png') ?>" alt="kamelia" />				
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-arcelor.png') ?>" alt="arcelor" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/gavtkurch-logo.png') ?>" alt="gavtkurch" />			
+						<img class="img img-fluid" src="<?php assets_url('img/partners/kamelia-logo.png') ?>" alt="kamelia" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-pankurchak.png') ?>" alt="pankurchak" />		
+						<img class="img img-fluid" src="<?php assets_url('img/partners/komo-logo.png') ?>" alt="komo" />	
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-volin.jpg') ?>" alt="volin" />					
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-volin.jpg') ?>" alt="volin" />
+					</div>
+				</div>
+				<div class="partners partners_slider">
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/terrafood-logo.png') ?>" alt="terrafood" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-spetstechno.png') ?>" alt="spetstechno" />		
-					</div>
-
-					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/cheaseclub-logo.png') ?>" alt="cheaseclub" />		
-					</div>
-					
-					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-buchach.png') ?>" alt="buchach" />				
+						<img class="img img-fluid" src="<?php assets_url('img/partners/galicia-logo.png') ?>" alt="galicia" />		
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-gitomir.png') ?>" alt="gitomir" />				
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-pankurchak.png') ?>" alt="pankurchak" />	
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-rsz.png') ?>" alt="rsz" />					
+						<img class="img img-fluid" src="<?php assets_url('img/partners/gavtkurch-logo.png') ?>" alt="gavtkurch" />		
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/terrafood-logo.png') ?>" alt="terrafood" />
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/galicia-logo.png') ?>" alt="galicia" />		
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-pankurchak.png') ?>" alt="pankurchak" />	
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/gavtkurch-logo.png') ?>" alt="gavtkurch" />		
 					</div>
 				</div>
 			</div>

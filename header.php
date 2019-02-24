@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	
-	<title><?php bloginfo( 'name' ); echo " | "; the_title(); ?></title>
+	<title><?php the_title(); ?></title>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
 <header class="header">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-2 header_logo">
 				<?php if ( has_custom_logo() ) : ?>
@@ -20,7 +20,7 @@
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 				?> 
-				<a href="https://fortexenergy.com"><img class="img img-fluid" src="<?php echo $image[0]; ?>" alt="logotype"></a>
+				<a href="<?php echo get_home_url(); ?>"><img class="img img-fluid" src="<?php echo $image[0]; ?>" alt="logotype"></a>
 				<?php endif; ?>	
 			</div>
 			<div class="col-lg-8 col-md-7 main_menu d-none d-md-block">
