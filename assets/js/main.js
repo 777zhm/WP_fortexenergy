@@ -10,20 +10,11 @@ function closeOverlay() {
 	$('#burger_nav').css("width", "0%");
 };
 
-$('#burger_icon_box').click(function(){
+$('#burger_open').click(function(){
 	openOverlay();
-
-	setTimeout(function() {
-		closeOverlay();
-	}, 20000);
-
 });
 
-$('#burger_icon_close').click(function(){
-	closeOverlay();
-});
-
-$('.overlay_menu a').click(function(){
+$('#burger_close').click(function(){
 	closeOverlay();
 });
 // End Main menu navigation

@@ -29,6 +29,10 @@ body {
 	color: #231f20;
 }
 
+header, footer{
+	background-color: #fff;
+}
+
 h1, h2, h3, h4, h5, h6{
 	color: #000000;
 }
@@ -76,42 +80,27 @@ a:hover{
     box-shadow: none;
 }
 /* End Base styles */
-/* Start Header */
-header.header{
-	background-color: #fff;
-	padding: 15px;
-	box-shadow: inset 0px 2px 20px 0px rgba(142, 198, 66, 0.5);
-}
-
-.header_logo{
+/* Start Logotype */
+.logotype{
 	text-align: left;
 }
 
-.header_logo img{
-	max-height: 75px;
+.logotype img{
+	max-height: 60px;
 	width: auto;
 }
+/* End Logotype */
+/* Start Header */
 
 /* End Header */
 /* Start Footer */
-footer.footer{
-	background-color: #fff;
-}
-
-.footer_logo {
-	text-align: center;	
-}
-
-.footer_logo img{
-	max-height: 75px;
-	width: auto;
-}
 
 /* End Footer */
 /* Start Main Menu */
-.main_menu{
+.main_menu {
 	text-align: center;
 }
+
 .main_menu ul {
 	list-style: none;
 	margin: 0;
@@ -166,85 +155,88 @@ footer.footer{
 	width: 100%;
 }
 /* End Main Menu */
-/* Start Mobile Menu */
-.burger_icon_box {
-	position: fixed;
-	top: 10px;
-	right: 10px;
-}
-
-.burger_icon {
-	font-size: 30px;
-	cursor: pointer;
-	padding: 10px 16px 10px 16px;
-}
-
-
-.overlay {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.9);
-	color: #f5f5f5;
-	overflow-x: hidden;
-	transition: 0.5s;
-}
-
-.overlay_menu {
-	position: relative;
-	top: 25%;
-	width: 100%;
-	text-align: center;
-	margin-top: 30px;
-}
-
-.overlay_menu ul {
-	list-style: none;
-}
-
-.overlay a {
-	padding: 8px;
-	text-decoration: none;
-	font-size: 36px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-	color: #f1f1f1;
-}
-
-.overlay .burger_icon_close {
-	position: absolute;
-	top: 20px;
-	right: 45px;
-	font-size: 50px;
-	cursor: pointer;
-	z-index: 99;
-}
-/* End Mobile Menu */
 /* Start Language Menu */
-.lang_menu{
-	text-align: center;
-}
-.lang_menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+.lang_menu {
+	font-size: 16px;
 }
 
-.lang_menu ul li {
-	display: inline-block;
+.lang_menu ul {
+	position: relative;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 4px;
+	margin-bottom: 0;
+
+}
+
+.lang_menu a {
+	text-decoration: none;
 }
 
 /* End Language Menu */
+/* Start Mobile Menu */
+.burger_open {
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	font-size: 30px;
+	cursor: pointer;
+
+	z-index: 5;
+}
+
+.burger_close {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+
+	font-size: 50px;
+	color: #f5f5f5;
+	cursor: pointer;
+
+	z-index: 99;
+}
+
+.burger_nav {
+	position: fixed;
+	height: 100%;
+	width: 0;
+	
+	top: 0;
+	left: 0;
+
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+	overflow-x: hidden;
+	
+	z-index: 10;
+
+	transition: 0.5s;
+}
+
+.burger_nav ul{
+	text-align: center;
+	padding-left: 0;
+	padding-top: 120px;
+}
+
+.burger_nav ul li{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.burger_nav a{
+	display: block;
+	text-decoration: none;
+	color: #f5f5f5;
+	font-size: 1.625em;
+}
+
+.burger_nav a:hover{
+	color: #8ec642;
+}
+
+/* End Mobile Menu */
 /* Start Buttons */
 .base_btn {
 	display: inline-block;
@@ -260,7 +252,7 @@ footer.footer{
 	border-radius: 3px;
 	cursor: pointer; 
 
-	max-width: 320px;
+	max-width: 280px;
 }
 
 .base_btn:hover {
@@ -286,165 +278,19 @@ footer.footer{
 }
 /* End Buttons */
 /* Start Forms */
-.form_section{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f4f5f9;
-}
-
-.form_section h3{
-  color: #8ec642; 
-  margin-bottom: 20px;
-}
-
-.form_section p{
-  color: #999999;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.form_section .title_dot{
-  margin-top: 28px;
-  margin-bottom: 68px;
-}
-
-.equal{
-  display: flex;
-  display: -webkit-flex;
-}
-
-.form_section .contact_item p{
-  color: #999999;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.contact_box{
-  background-color: #ffffff;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 50px;
-  padding-bottom: 35px;
-  margin-bottom: 20px;
-
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact_item{
-  margin-bottom: 50px;
-}
-
-.contact_form_box{
-  background-color: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact_form_box_2{
-	background-color: #ffffff;
-	color: #000;
-	padding: 50px;
-	margin-bottom: 20px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-	position: relative;
-}
-
-.contact_form_box_2 p{
-  color: #000;
-}
-
-.contact_form_box_2 .change_subheading {
-	font-size: 20px;
-}
-
-.contact_form_box_2 .change_button{
-	position: absolute;
-	bottom: 50px;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-
-.contact_form input, .contact_form textarea{
-  margin-bottom: 30px;
-  border: none;
-  border-radius: 0px;
-  border-bottom: 1px solid rgba(153,153,153,0.25);
-}
-
-textarea{
-  resize: none;
-}
-
-.form-control:focus {
-    color: #000000;
-    background-color: #fff;
-    border-bottom-color: #8ec642; 
-    box-shadow: 0 0 0 0px rgba(153,153,153,0.25);
-}
-
-.contact_form_box .submit_button_box{
-  margin-top: 30px;
-}
 
 /* End Forms */
-/********** Start Theme Specific Sections **********/
-/* End heroscreen block */
-section.heroscreen{
-	background-color: #fff;
-	padding: 0;	
-	background: url("") center bottom no-repeat;
-	background-size: cover;
-	padding: 30px;
-	min-height: 360px;
-}
+/** Start Main page **/
+/* Start heroscreen_section */
 
-.hero_text_box{
-	text-align: center;
-	margin-top: 120px;
-}
+/* End heroscreen_section */
+/* Start company_section */
 
+/* End company_section */
+/* Start products_section */
 
-.heroscreen h1 {
-	display: inline-block;
-	font-size: 52px;
-	font-weight: 700;
-
-	color: #080808;
-
-}
-
-.heroscreen p {
-	display: inline-block;
-	font-size: 22px;
-	color: #080808;
-
-}
-/* End heroscreen block */
-/* Start second_screen block */
-.second_screen{
-	padding-top: 26px;
-	padding-bottom: 26px;
-}
-.second_screen h1{
-	font-size: 52px;
-	font-weight: 700;
-
-	color: #080808;
-}
-
-.second_screen p{
-	font-size: 22px;
-	color: #080808;
-}
-
-
-/* End second_screen block */
-/* Start Partners block */
+/* End products_section */
+/* Start partners_section */
 .partner_item img{
   position: absolute;
   top:0;
@@ -461,22 +307,19 @@ section.heroscreen{
   text-align: center;
   height:160px;
 }
+/* End partners_section */
+/** End Main page **/
 
-/* End Partners block */
+
 /** Start Aboutus page **/
 section.aboutus_mainscreen{
 	background: url('img/about_bg.jpg') center bottom no-repeat;
 	background-size: cover;
 	color: #ffffff;
-	
-
 	padding-left: 15%;
 	padding-right: 15%;
 	padding-top: 5%;
-	/*padding-bottom: 5%;*/
-
 	text-align: center;
-	/*min-height: 360px;*/
 }
 
 .aboutus_mainscreen h2{
@@ -484,13 +327,11 @@ section.aboutus_mainscreen{
 	
 	text-transform: uppercase;
 	font-weight: 600;
-	/*color: #ffffff;*/
 	color: #8ec642;
 }
 
 .aboutus_mainscreen p{
 	font-size: 22px;
-	/*color: #ffffff;*/
 	color: #8ec642;
 }
 
@@ -500,22 +341,17 @@ section.aboutus_mainscreen{
 }
 
 .aboutus_page_section .heading_decorative{
-	/*display: inline-block;*/
 	position: relative;
 }
 
 .heading_decorative:after {
 	content: '';
 	display: inline-block;
-	position: absolute;
-	
+	position: absolute;	
 	bottom: 0;
 	left: 0;
-
-	
 	border-bottom: 1px solid #8ec642;
 	border-radius: 2px;
-
 	width: 0%;
 	-webkit-transition: all 0.4s ease-out;
 	-moz-transition: all 0.4s ease-out;
@@ -526,8 +362,6 @@ section.aboutus_mainscreen{
 .heading_decorative:hover:after {
 	width: 20%;
 }
-
-
 
 .aboutus_page_section ul{
 	padding-left: 0px;
@@ -580,8 +414,6 @@ section.aboutus_mainscreen{
     background-color: rgba(142,198,66, .03);
     border-bottom: 1px solid rgba(0,0,0,.125);
 }
-
-
 /** End Dispute page **/
 /** Start Contact page **/
 .contact_page_section{
@@ -603,13 +435,12 @@ section.aboutus_mainscreen{
 .contact_address{
 	margin-bottom: 16px;
 }
+
 .contact_address p{
 	margin-bottom: 2px;
 }
-
 /** End Contact page **/
-/********** End Theme Specific Sections **********/
-/* Start Media query */
+/*** Start Media query ***/
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (landscape phones, 576px and up) */
@@ -628,43 +459,4 @@ section.aboutus_mainscreen{
 @media (min-width: 1200px) { 
 
 }
-/* End Media query */
-
-.fadein_box h1, .fadein_box h2, .fadein_box p {
-    animation: fadein 4s;
-    -moz-animation: fadein 4s; /* Firefox */
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
-    -o-animation: fadein 4s; /* Opera */
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+/*** End Media query ***/

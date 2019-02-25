@@ -13,30 +13,24 @@
 
 <header class="header">
 	<div class="container">
-		<div class="row">
-			<div class="col-2 header_logo">
-				<?php if ( has_custom_logo() ) : ?>
-				<?php
-					$custom_logo_id = get_theme_mod( 'custom_logo' );
-					$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-				?> 
-				<a href="<?php echo get_home_url(); ?>"><img class="img img-fluid" src="<?php echo $image[0]; ?>" alt="logotype"></a>
-				<?php endif; ?>	
+		<div class="row justify-content-between">
+			<div class="logotype col-lg-2 col-md-2 col-sm-8 col-8">
+				<?php if ( has_custom_logo() ) : the_custom_logo(); endif; ?>	
 			</div>
-			<div class="col-lg-8 col-md-7 main_menu d-none d-md-block">
+			<div class="main_menu col-lg-9 col-md-8 d-none d-lg-block">
 				<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
 			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 lang_menu d-none">
+			<div class="lang_menu col-lg-1 col-md-2 col-sm-4 col-4 d-flex align-items-center">
 				<?php wp_nav_menu( array('theme_location' => 'lang_menu') ); ?>
+				<div>
+				<span class="burger_open d-lg-none" id="burger_open">&#9776;</span>
+				</div>
 			</div>
-			<div class="d-sm-none burger_icon_box" id="burger_icon_box"><span class="burger_icon">&#9776;</span></div>
 		</div>
 	</div>
-	<div id="burger_nav" class="overlay">
-		<span class="burger_icon_close" id="burger_icon_close">&times;</span>
-		<div class="overlay_menu">
-			<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
-		</div>
+	<div id="burger_nav" class="burger_nav">
+		<span class="burger_close" id="burger_close">&times;</span>
+		<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
 	</div>
 </header>
 
