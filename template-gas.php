@@ -17,8 +17,8 @@
 				</ul>
 			</div>
 			<div class="col-lg-12 text-center buttons_box">
-				<button class="base_btn"><a href="https://www.ueex.com.ua/rus/exchange_quotations/Natural+gas/" target="_blank" rel="noopener">Дізнатись ціну на газ</a></button>
-				<button class="base_btn"><a href="http://utg.ua/test/eic.php" target="_blank" rel="noopener">Перевірте ваш EIC-код</a></button>
+				<button class="btn_base btn_filled"><a href="https://www.ueex.com.ua/rus/exchange_quotations/Natural+gas/" target="_blank" rel="noopener">Дізнатись тарифи</a></button>
+				<button class="btn_base"><a href="http://utg.ua/test/eic.php" target="_blank" rel="noopener">Перевірте ваш EIC-код</a></button>
 			</div>
 			<div class="col-lg-12">
 				<h3>Комерційні документи:</h3>

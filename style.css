@@ -18,10 +18,12 @@ html { font-family: 'Inter', sans-serif; }
 /* Start Colors */
 .company_color {
 	background: #ffffff;
-	background: #f5f5f5;
-	background: #dcdcdc;
-	background: #8ec642; /* rgb(142,198,66); */
-	background: #231f20;
+	background: #f1f1f1;
+	background: #E9E9E9;
+	background: #C4C4C4;
+	background: #29D19A;
+	background: #62758C;
+	background: #2A3540;
 }
 /* End Colors */
 /* Start Base styles */
@@ -33,43 +35,73 @@ body {
 }
 
 header, footer{
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6{
+	font-family: 'Inter', sans-serif;
 	color: #2A3540;
+	font-style: normal;
+	line-height: normal;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+}
+
+h1, h2, h3{
+	font-weight: 600;	
+}
+
+h4, h5, h6{
+	font-weight: 500;
 }
 
 h1{
 	font-size: 36px;
-	font-weight: bold;
+	margin-bottom: 40px;
+	
 	line-height: 56px;
-	letter-spacing: 0.5px;
 	text-transform: uppercase;
 }
 
 h2{
 	font-size: 48px;
-	font-weight: 600;
-	line-height: normal;
-	letter-spacing: 0.5px;
-	text-transform: capitalize;
+	margin-bottom: 30px;
+
+	text-align: center;
 }
 
 h3{
-	font-size: 26px;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 h4{
-	font-size: 22px;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 20px;
 }
 
 h5{
-	font-size: 18px;
+	font-size: 16px;
 }
 
 h6{
 	font-size: 16px;
+}
+
+p {
+	color: #62758C;
+	font-style: normal;
+}
+
+.section_subheading{
+	font-weight: 500;
+	line-height: 26px;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	margin-bottom: 100px;
 }
 
 ul, ol{
@@ -83,25 +115,12 @@ a{
 
 a:hover{
 	color: inherit;
-	text-decoration-color: #8ec642;
+	text-decoration-color: #29D19A;
 }
 
 .btn.focus, .btn:focus {
-    outline: 0;
-    box-shadow: none;
-}
-
-p {
-	color: #62758C;
-}
-
-.section_subheading{
-	font-style: normal;
-	font-weight: 500;
-	line-height: 26px;
-	font-size: 18px;
-	text-align: center;
-	letter-spacing: 0.5px;
+	outline: 0;
+	box-shadow: none;
 }
 /* End Base styles */
 /* Start Logotype */
@@ -143,7 +162,6 @@ header a, footer a{
 
 header a:hover, footer a:hover{
 	text-decoration: none;
-	text-align: center;
 }
 
 .back_to_top{
@@ -178,7 +196,7 @@ header a:hover, footer a:hover{
 }
 
 .main_menu ul li a:hover {
-	color: #8ec642;
+	color: #29D19A;
 }
 
 .main_menu ul li a:after {
@@ -188,7 +206,7 @@ header a:hover, footer a:hover{
 	
 	bottom: 0;
 	left: 0;
-	border-bottom: 1px solid #8ec642;
+	border-bottom: 1px solid #29D19A;
 	border-radius: 2px;
 
 	width: 0%;
@@ -242,7 +260,7 @@ header a:hover, footer a:hover{
 	right: 18px;
 
 	font-size: 50px;
-	color: #f5f5f5;
+	color: #f1f1f1;
 	cursor: pointer;
 
 	z-index: 99;
@@ -279,12 +297,12 @@ header a:hover, footer a:hover{
 .burger_nav a{
 	display: block;
 	text-decoration: none;
-	color: #f5f5f5;
+	color: #f1f1f1;
 	font-size: 1.5em;
 }
 
 .burger_nav a:hover{
-	color: #8ec642;
+	color: #29D19A;
 }
 /* End Mobile Menu */
 /* Start Buttons */
@@ -304,7 +322,11 @@ header a:hover, footer a:hover{
 	color: #62758C;
 
 	padding: 14px 32px;
-	max-width: 240px;
+	max-width: 250px;
+}
+
+.btn_base a{
+	text-decoration: none;
 }
 
 .btn_base:hover {
@@ -330,14 +352,43 @@ header a:hover, footer a:hover{
 /* Start Forms */
 
 /* End Forms */
-/** Start Main page **/
-/* Start heroscreen_section */
-.heroscreen_section h1{
-	margin-bottom: 40px;
+/* Start decorative */
+.equal{
+  display: flex;
+  display: -webkit-flex;
+  min-width: 0;
 }
 
+.circle_decorative{
+	position: absolute;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #2AD19A;
+	height: 100px;
+	width: 100px;
+
+	top: -50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+}
+
+/* End decorative */
+/** Start Main page **/
+.heroscreen_section, .company_section, .products_section, .partners_section{
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+/* Start heroscreen_section */
+.heroscreen_section{
+	background: url('img/heroscreen_bg.png') right bottom no-repeat;
+	background-size: contain;
+}
+
+
+
 .heroscreen_section .section_subheading{
-	font-style: normal;
 	font-weight: 600;
 	line-height: 32px;
 	font-size: 18px;
@@ -354,19 +405,6 @@ header a:hover, footer a:hover{
 
 /* End heroscreen_section */
 /* Start company_section */
-.company_section{
-	padding-top: 120px;
-	padding-bottom: 50px;
-}
-
-.company_section h2{
-	margin-bottom: 30px;
-}
-
-.company_section .section_subheading{
-	margin-bottom: 100px;
-}
-
 .company_item{
 	position: relative;
 	text-align: center;
@@ -376,29 +414,9 @@ header a:hover, footer a:hover{
 	box-shadow: 0px 0px 4px #E9E9E9;
 	border-radius: 10px;
 
-	margin: 0 30px;
-	padding: 0 25px 19px 25px;
-}
-
-.circle_decorative{
-	position: relative;
-	display: inline-block;
-	border-radius: 50%;
-	background-color: #2AD19A;
-	height: 100px;
-	width: 100px;
-	top: -50px;
-}
-
-.company_item h3{
-	font-weight: 600;
-	line-height: normal;
-	font-size: 20px;
-	text-align: center;
-	letter-spacing: 0.5px;
-	text-transform: capitalize;
-
-	margin-bottom: 16px;
+	margin: 0 15px;
+	padding: 60px 25px 20px 25px;
+	width: 100%;
 }
 
 .company_item p{
@@ -410,17 +428,17 @@ header a:hover, footer a:hover{
 }
 /* End company_section */
 /* Start products_section */
-.products_section{
-	padding-top: 70px;
-	padding-bottom: 45px;
-}
+.product_item{
+	background: #FFFFFF;
+	border: 1px solid #F1F1F1;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 4px #E9E9E9;
+	border-radius: 10px;
 
-.products_section h2{
-	margin-bottom: 30px;
-}
+	padding: 25px 50px;
+	margin: 0 15px;
 
-.products_section .section_subheading{
-	margin-bottom: 100px;
+	width: 100%;
 }
 
 .product_item .outer_link{
@@ -432,40 +450,11 @@ header a:hover, footer a:hover{
 	color: #2AD19A;
 }
 
-.product_item h3{
-	margin-top: 20px;
+.product_item a:hover{
+	text-decoration: none;
 }
-
-.product_item h4{
-	margin-top: 40px;
-}
-
-.product_item{
-	background: #FFFFFF;
-	border: 1px solid #F1F1F1;
-	box-sizing: border-box;
-	box-shadow: 0px 0px 4px #E9E9E9;
-	border-radius: 10px;
-
-	padding: 25px 50px;
-	margin: 0 35px;
-}
-
 /* End products_section */
 /* Start partners_section */
-.partners_section{
-	padding-top: 70px;
-	padding-bottom: 200px;
-}
-
-.partners_section h2{
-	margin-bottom: 30px;
-}
-
-.partners_section .section_subheading{
-	margin-bottom: 100px;
-}
-
 .partner_item{
   position: relative;
   text-align: center;
@@ -503,12 +492,12 @@ section.aboutus_mainscreen{
 	
 	text-transform: uppercase;
 	font-weight: 600;
-	color: #8ec642;
+	color: #29D19A;
 }
 
 .aboutus_mainscreen p{
 	font-size: 22px;
-	color: #8ec642;
+	color: #29D19A;
 }
 
 .aboutus_page_section{
@@ -526,7 +515,7 @@ section.aboutus_mainscreen{
 	position: absolute;	
 	bottom: 0;
 	left: 0;
-	border-bottom: 1px solid #8ec642;
+	border-bottom: 1px solid #29D19A;
 	border-radius: 2px;
 	width: 0%;
 	-webkit-transition: all 0.4s ease-out;
@@ -557,7 +546,7 @@ section.aboutus_mainscreen{
 	content: "✓";
 	/*content: "\1F5F8";*/
 	margin-right: 8px;
-	color: #8ec642;
+	color: #29D19A;
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -570,7 +559,7 @@ section.aboutus_mainscreen{
 }
 
 .docs_list li a:hover{
-	text-decoration-color: #8ec642;
+	text-decoration-color: #29D19A;
 }
 
 /** End Gas/Energy page **/
@@ -584,11 +573,11 @@ section.aboutus_mainscreen{
 }
 
 .card-header {
-    padding: .75rem 1.25rem;
-    margin-bottom: 0;
-    color: inherit;
-    background-color: rgba(142,198,66, .03);
-    border-bottom: 1px solid rgba(0,0,0,.125);
+	padding: .75rem 1.25rem;
+	margin-bottom: 0;
+	color: inherit;
+	background-color: rgba(142,198,66, .03);
+	border-bottom: 1px solid rgba(0,0,0,.125);
 }
 /** End Dispute page **/
 /** Start Contact page **/
@@ -599,9 +588,9 @@ section.aboutus_mainscreen{
 
 .contact_tel a{
 	color: #000000;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 .contact_schedule p {
