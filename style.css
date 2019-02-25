@@ -9,7 +9,11 @@ Text Domain: fortexenergy
 */
 
 /* Start Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic-ext');
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 /* End Fonts */
 /* Start Colors */
 .company_color {
@@ -22,11 +26,10 @@ Text Domain: fortexenergy
 /* End Colors */
 /* Start Base styles */
 
-body {	
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+body {
+	font-size: 14px;
 	background-color: #ffffff;
-	color: #231f20;
+	color: #2A3540;
 }
 
 header, footer{
@@ -34,15 +37,23 @@ header, footer{
 }
 
 h1, h2, h3, h4, h5, h6{
-	color: #000000;
+	color: #2A3540;
 }
 
 h1{
 	font-size: 36px;
+	font-weight: bold;
+	line-height: 56px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
 }
 
 h2{
-	font-size: 32px;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.5px;
+	text-transform: capitalize;
 }
 
 h3{
@@ -66,7 +77,7 @@ ul, ol{
 }
 
 a{
-	color: #000000;
+	color: #2A3540;
 	text-decoration: none;
 }
 
@@ -79,6 +90,19 @@ a:hover{
     outline: 0;
     box-shadow: none;
 }
+
+p {
+	color: #62758C;
+}
+
+.section_subheading{
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
 /* End Base styles */
 /* Start Logotype */
 .logotype{
@@ -86,16 +110,51 @@ a:hover{
 }
 
 .logotype img{
-	max-height: 60px;
+	max-height: 40px;
 	width: auto;
 }
 /* End Logotype */
-/* Start Header */
+/* Start Header&Footer */
+header.header{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
 
-/* End Header */
-/* Start Footer */
+footer.footer{
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
 
-/* End Footer */
+header, footer{
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #2A3540;
+}
+
+header a, footer a{
+	text-decoration: none;
+	text-align: center;
+}
+
+header a:hover, footer a:hover{
+	text-decoration: none;
+	text-align: center;
+}
+
+.back_to_top{
+	text-align: right;
+}
+
+.back_to_top a{
+	margin-right: 12px;
+}
+
+/* End Header&Footer */
 /* Start Main Menu */
 .main_menu {
 	text-align: center;
@@ -103,31 +162,23 @@ a:hover{
 
 .main_menu ul {
 	list-style: none;
-	margin: 0;
-	padding-top: 10px;
-	padding-left: 10px;
-	overflow: hidden;
+	padding-left: 0;
+	margin-bottom: 0;
 }
 
 .main_menu ul li {
 	display: inline-block;
-	margin-right: 12px;
-	
+	margin-right: 50px;
 }
 
 .main_menu ul li a {
 	display: inline-block;
 	position: relative;
-	
-	color: #000000;
-
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-
-	font-size: 16px;
-	font-weight: 600;
 	padding: 5px 0 5px;
+}
+
+.main_menu ul li a:hover {
+	color: #8ec642;
 }
 
 .main_menu ul li a:after {
@@ -147,39 +198,39 @@ a:hover{
 	transition: all 0.4s ease-out;
 }
 
-.main_menu ul li a:hover {
-	color: #8ec642;
-}
-
 .main_menu ul li a:hover:after {
 	width: 100%;
 }
 /* End Main Menu */
 /* Start Language Menu */
 .lang_menu {
-	font-size: 16px;
+	text-align: right;
 }
 
 .lang_menu ul {
-	position: relative;
 	list-style: none;
 	padding-left: 0;
-	margin-top: 4px;
 	margin-bottom: 0;
-
 }
 
-.lang_menu a {
-	text-decoration: none;
+.lang_menu ul li {
+	display: inline-block;
+	margin-right: 44px;
+}
+
+.lang_menu ul li a {
+	display: inline-block;
+	position: relative;
+	padding: 5px 0 5px;
 }
 
 /* End Language Menu */
 /* Start Mobile Menu */
 .burger_open {
 	position: fixed;
-	top: 10px;
+	top: 25px;
 	right: 20px;
-	font-size: 30px;
+	font-size: 26px;
 	cursor: pointer;
 
 	z-index: 5;
@@ -187,8 +238,8 @@ a:hover{
 
 .burger_close {
 	position: absolute;
-	top: 0px;
-	right: 20px;
+	top: 3px;
+	right: 18px;
 
 	font-size: 50px;
 	color: #f5f5f5;
@@ -229,68 +280,198 @@ a:hover{
 	display: block;
 	text-decoration: none;
 	color: #f5f5f5;
-	font-size: 1.625em;
+	font-size: 1.5em;
 }
 
 .burger_nav a:hover{
 	color: #8ec642;
 }
-
 /* End Mobile Menu */
 /* Start Buttons */
-.base_btn {
-	display: inline-block;
-	padding: 15px 20px;
-	background: #8ec642;
-	font-weight: 500;
-	color: #ffffff;
+.btn_base {
+	box-sizing: border-box;
+	background: inherit;
+	border: 1px solid #29D19A;
+	border-radius: 5px;
+	cursor: pointer;
+
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.5px;
 	text-transform: uppercase;
-	font-size: 18px;
-	width: 100%;
-	box-shadow: 0px 2px 4px rgba(142, 198, 66, 1);
-	border: none;
-	border-radius: 3px;
-	cursor: pointer; 
 
-	max-width: 280px;
+	color: #62758C;
+
+	padding: 14px 32px;
+	max-width: 240px;
 }
 
-.base_btn:hover {
-	background: #a0cf60;
+.btn_base:hover {
+	background: #29D19A;
+	color: #FFFFFF;
 }
 
-.base_btn:active {
-	background: #6f9e30; 
+.btn_base:focus {
+	outline: none;
 }
 
-.base_btn:focus {
-	outline: #6f9e30 auto 5px;
+.btn_filled {
+	background: #29D19A;
+	color: #FFFFFF;
 }
 
-.base_btn a{
-	color: #ffffff;
-	text-decoration: none;
+.btn_filled:hover {
+	background: #FFFFFF;
+	color: #62758C;
 }
 
-.base_btn a:hover{
-	color: #ffffff;
-	text-decoration: none;
-}
 /* End Buttons */
 /* Start Forms */
 
 /* End Forms */
 /** Start Main page **/
 /* Start heroscreen_section */
+.heroscreen_section h1{
+	margin-bottom: 40px;
+}
+
+.heroscreen_section .section_subheading{
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	text-align: left;
+
+	margin-bottom: 50px;
+}
+
+.heroscreen_section .btn_filled{
+	margin-right: 25px;
+}
 
 /* End heroscreen_section */
 /* Start company_section */
+.company_section{
+	padding-top: 120px;
+	padding-bottom: 50px;
+}
 
+.company_section h2{
+	margin-bottom: 30px;
+}
+
+.company_section .section_subheading{
+	margin-bottom: 100px;
+}
+
+.company_item{
+	position: relative;
+	text-align: center;
+	background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #C4C4C4;
+	border: 1px solid #F1F1F1;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 4px #E9E9E9;
+	border-radius: 10px;
+
+	margin: 0 30px;
+	padding: 0 25px 19px 25px;
+}
+
+.circle_decorative{
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #2AD19A;
+	height: 100px;
+	width: 100px;
+	top: -50px;
+}
+
+.company_item h3{
+	font-weight: 600;
+	line-height: normal;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-transform: capitalize;
+
+	margin-bottom: 16px;
+}
+
+.company_item p{
+	font-weight: 500;
+	line-height: 18px;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
 /* End company_section */
 /* Start products_section */
+.products_section{
+	padding-top: 70px;
+	padding-bottom: 45px;
+}
+
+.products_section h2{
+	margin-bottom: 30px;
+}
+
+.products_section .section_subheading{
+	margin-bottom: 100px;
+}
+
+.product_item .outer_link{
+	font-weight: bold;
+	line-height: 0px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #2AD19A;
+}
+
+.product_item h3{
+	margin-top: 20px;
+}
+
+.product_item h4{
+	margin-top: 40px;
+}
+
+.product_item{
+	background: #FFFFFF;
+	border: 1px solid #F1F1F1;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 4px #E9E9E9;
+	border-radius: 10px;
+
+	padding: 25px 50px;
+	margin: 0 35px;
+}
 
 /* End products_section */
 /* Start partners_section */
+.partners_section{
+	padding-top: 70px;
+	padding-bottom: 200px;
+}
+
+.partners_section h2{
+	margin-bottom: 30px;
+}
+
+.partners_section .section_subheading{
+	margin-bottom: 100px;
+}
+
+.partner_item{
+  position: relative;
+  text-align: center;
+  height: 150px;
+}
+
 .partner_item img{
   position: absolute;
   top:0;
@@ -298,15 +479,10 @@ a:hover{
   left:0;
   right:0;
   margin:auto;
-  max-height: 75px;
-  max-width: 150px;
+  max-height: 100px;
+  max-width: 100px;
 }
 
-.partner_item{
-  position: relative;
-  text-align: center;
-  height:160px;
-}
 /* End partners_section */
 /** End Main page **/
 
