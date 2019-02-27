@@ -668,11 +668,16 @@ section.aboutus_mainscreen{
 	padding-left: 0px;
 }
 /** End Aboutus page **/
-/** Start Gas/Energy page **/
-.gas_page_section, .energy_page_section{
+/** Start Gas/Energy/Dispute page **/
+.gas_page_section, .energy_page_section, .dispute_page_section{
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
+
+.gas_page_section h3:hover, .energy_page_section h3:hover, .dispute_page_section h3:hover{
+	color: #29D19A;
+}
+
 .buttons_box{
 	padding-top: 26px;
 	padding-bottom: 26px;
@@ -698,28 +703,16 @@ section.aboutus_mainscreen{
 	text-decoration-color: #29D19A;
 }
 
-/** End Gas/Energy page **/
-/** Start Dispute page **/
-.dispute_page_section{
-	padding-bottom: 32px;	
-}
-
-.dispute_page_row{
-	padding-left: 26px;
-}
-
-.card-header {
-	padding: .75rem 1.25rem;
-	margin-bottom: 0;
-	color: inherit;
-	background-color: rgba(142,198,66, .03);
-	border-bottom: 1px solid rgba(0,0,0,.125);
-}
-/** End Dispute page **/
+/** End Gas/Energy/Dispute page **/
 /** Start Contact page **/
 .contact_page_section{
 	padding-top: 32px;
 	padding-bottom: 32px;
+}
+
+.map_block{
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .contact_page_section h4{
