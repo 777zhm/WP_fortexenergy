@@ -25,10 +25,17 @@ $('#burger_close').click(function(){
 		      items : 4,
 		      itemsDesktop : [1199,4],
 		      itemsDesktopSmall : [979,3],
-			autoPlay : 3500
+			autoPlay : 4000
 		});
 // End owl carousel config
 
+
+// Start Backtotop button	      
+	$('.backtotop_button').click(function(){ 
+		$('html,body').animate({ scrollTop: 0 } );
+		return false; 
+	});
+// End Backtotop button
 
 }); //document.ready
 

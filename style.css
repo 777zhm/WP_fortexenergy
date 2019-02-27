@@ -28,8 +28,8 @@ html { font-family: 'Inter', sans-serif; }
 /* End Colors */
 /* Start Base styles */
 
-body {
-	font-size: 14px;
+html, body {
+	font-size: 16px;
 	background-color: #ffffff;
 	color: #2A3540;
 }
@@ -56,43 +56,48 @@ h4, h5, h6{
 }
 
 h1{
-	font-size: 36px;
+	font-size: 2em;
 	margin-bottom: 40px;
-	
 	line-height: 56px;
 	text-transform: uppercase;
 }
 
 h2{
-	font-size: 48px;
+	font-size: 2.75em;
 	margin-bottom: 30px;
-
 	text-align: center;
 }
 
 h3{
-	font-size: 20px;
+	font-size: 1.25em;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 h4{
-	font-size: 18px;
-	line-height: 26px;
-	margin-bottom: 20px;
+	font-size: 1.125em;
 }
 
 h5{
-	font-size: 16px;
+	font-size: 1em;
 }
 
 h6{
-	font-size: 16px;
+	font-size: 1em;
 }
 
 p {
 	color: #62758C;
 	font-style: normal;
+}
+
+.colored_text{
+	color: #29D19A; /*#24bc8a;*/
+}
+
+p.colored_text{
+	color: #24bc8a;
+	font-weight: 600;
 }
 
 .section_subheading{
@@ -129,7 +134,7 @@ a:hover{
 }
 
 .logotype img{
-	max-height: 40px;
+	max-height: 75px;
 	width: auto;
 }
 /* End Logotype */
@@ -149,7 +154,7 @@ header, footer{
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
-	font-size: 12px;
+	font-size: 1em;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	color: #2A3540;
@@ -164,18 +169,28 @@ header a:hover, footer a:hover{
 	text-decoration: none;
 }
 
-.back_to_top{
-	text-align: right;
+.backtotop_button{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-image: url(assets/img/backtotop_icon.png);
+  z-index: 99;
 }
 
-.back_to_top a{
-	margin-right: 12px;
+.backtotop_button:hover {
+  opacity: 0.9;
 }
 
 /* End Header&Footer */
 /* Start Main Menu */
 .main_menu {
 	text-align: center;
+	font-size: 1em;
 }
 
 .main_menu ul {
@@ -186,13 +201,15 @@ header a:hover, footer a:hover{
 
 .main_menu ul li {
 	display: inline-block;
-	margin-right: 50px;
+	margin-right: 30px;
+	font-size: 1em;
 }
 
 .main_menu ul li a {
 	display: inline-block;
 	position: relative;
 	padding: 5px 0 5px;
+	font-size: 1em;
 }
 
 .main_menu ul li a:hover {
@@ -223,6 +240,7 @@ header a:hover, footer a:hover{
 /* Start Language Menu */
 .lang_menu {
 	text-align: right;
+	font-size: 1em;
 }
 
 .lang_menu ul {
@@ -234,14 +252,23 @@ header a:hover, footer a:hover{
 .lang_menu ul li {
 	display: inline-block;
 	margin-right: 44px;
+	font-size: 1em;
 }
 
 .lang_menu ul li a {
 	display: inline-block;
 	position: relative;
 	padding: 5px 0 5px;
+	font-size: 1em;
+	border: 1px solid #2A3540;
+	border-radius: 50px;
+	padding: 8px;
 }
 
+.lang_menu ul li a:hover {
+	color: #29D19A;
+	border: 1px solid #29D19A;
+}
 /* End Language Menu */
 /* Start Mobile Menu */
 .burger_open {
@@ -308,7 +335,7 @@ header a:hover, footer a:hover{
 /* Start Buttons */
 .btn_base {
 	box-sizing: border-box;
-	background: inherit;
+	background-color: inherit;
 	border: 1px solid #29D19A;
 	border-radius: 5px;
 	cursor: pointer;
@@ -322,11 +349,7 @@ header a:hover, footer a:hover{
 	color: #62758C;
 
 	padding: 14px 32px;
-	max-width: 250px;
-}
-
-.btn_base a{
-	text-decoration: none;
+	max-width: 300px;
 }
 
 .btn_base:hover {
@@ -334,19 +357,34 @@ header a:hover, footer a:hover{
 	color: #FFFFFF;
 }
 
-.btn_base:focus {
+.btn_base:focus, .btn_filled:focus{
 	outline: none;
 }
 
 .btn_filled {
-	background: #29D19A;
+	box-sizing: border-box;
+	background-color: #29D19A;
 	color: #FFFFFF;
+
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+
+	padding: 14px 32px;
+	max-width: 300px;
 }
 
 .btn_filled:hover {
-	background: #FFFFFF;
-	color: #62758C;
+	background-color: #36EAAF;
+	color: #FFFFFF;
 }
+
 
 /* End Buttons */
 /* Start Forms */
@@ -382,11 +420,10 @@ header a:hover, footer a:hover{
 }
 /* Start heroscreen_section */
 .heroscreen_section{
-	background: url('img/heroscreen_bg.png') right bottom no-repeat;
+	background-repeat: no-repeat;
+	background-position: 85% 90%;
 	background-size: contain;
 }
-
-
 
 .heroscreen_section .section_subheading{
 	font-weight: 600;
@@ -426,10 +463,28 @@ header a:hover, footer a:hover{
 	text-align: center;
 	letter-spacing: 0.5px;
 }
+
+.icon_box{
+	position: absolute;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background-color: #ffffff;
+	top: -50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	text-align: center;
+}
 /* End company_section */
 /* Start products_section */
 .product_item{
 	background: #FFFFFF;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: 20px 20px;
+
 	border: 1px solid #F1F1F1;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 4px #E9E9E9;
@@ -439,20 +494,24 @@ header a:hover, footer a:hover{
 	margin: 0 15px;
 
 	width: 100%;
+	text-align: center;
 }
 
-.product_item .outer_link{
-	font-weight: bold;
-	line-height: 0px;
-	font-size: 12px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	color: #2AD19A;
+.product_gas{
+	background-image: url(assets/img/gas_icon.png);
 }
+
+.product_electricity{
+	background-image: url(assets/img/energy_icon.png);
+}
+
+
 
 .product_item a:hover{
 	text-decoration: none;
 }
+
+
 /* End products_section */
 /* Start partners_section */
 .partner_item{
@@ -474,7 +533,84 @@ header a:hover, footer a:hover{
 
 /* End partners_section */
 /** End Main page **/
+/* Start Modal window */
+.modal-dialog{
+	max-width: 400px;
+}
+.modal{
+  background-color: rgba(0,0,0,0.15);
+}
 
+.modal-content{
+	background-color: #FFFFFF;
+	color: #62758C;
+
+	border: none;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.modal-header{
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	background: #29D19A;
+}
+
+.modal-title{
+	color: #ffffff;
+	margin: auto;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+.down_arrow_box{
+	padding-right: 16px;
+}
+
+.modal-body{
+	padding: 10px 25px 10px 25px;
+}
+
+
+.modal-body input{
+	height: 50px;
+
+	border: 1px solid #D3DEEC;
+	box-sizing: border-box;
+	border-radius: 5px;
+
+	font-size: 12px;
+	font-weight: 500;
+	line-height: normal;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	color: #A6B9CF;
+	
+	padding-left: 24px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.modal_button_submit{
+	height: 50px;
+	width: 100%;
+	max-width: 400px;
+
+	font-weight: 600;
+	line-height: normal;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+/* End Modal window */
 
 /** Start Aboutus page **/
 section.aboutus_mainscreen{
@@ -586,12 +722,29 @@ section.aboutus_mainscreen{
 	padding-bottom: 32px;
 }
 
+.contact_page_section h4{
+	margin-bottom: 4px;
+}
+
 .contact_tel a{
 	color: #000000;
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: 700;
 	text-decoration: none;
 }
+
+.contact_tel a:hover{
+	color: #29D19A;
+}
+
+.contact_email a{
+	text-decoration: none;
+}
+
+.contact_email a:hover{
+	color: #29D19A;
+}
+
 
 .contact_schedule p {
 	margin-bottom: 2px;
@@ -606,22 +759,35 @@ section.aboutus_mainscreen{
 }
 /** End Contact page **/
 /*** Start Media query ***/
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query since this is the default in Bootstrap */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* Start max-width: 992px and min-width: 1199px */
+@media (min-width: 992px) and (max-width: 1199px)  {
 
-}
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
 
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+}/* End max-width: 992px and min-width: 1199px */
+/* Start max-width: 991px*/
+@media (max-width: 991px)  {
 
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
 
+} /* End max-width: 991px*/
+/* Start max-width: 767px */
+@media (max-width: 767px)  {
+
+.backtotop_button{
+  position: fixed;
+  bottom: 11px;
+  right: 11px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  background-size: contain;
+  background-image: url(assets/img/backtotop_icon.png);
 }
+
+} /* End max-width: 767px*/
+/* Start max-width: 575px */
+@media (max-width: 575px)  {
+
+
+} /* End max-width: 575px */
 /*** End Media query ***/
