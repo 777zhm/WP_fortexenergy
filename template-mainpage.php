@@ -8,7 +8,7 @@
 				<h1>Надійний постачальник<br>енергоносіїв українським та закордонним споживачам</h1>
 				<p class="section_subheading">Сучасна енергетична компанія, що розуміє потреби клієнтів</p>
 				<button class="btn_filled">Дізнатися тарифи</button>
-				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModal">Консультація</button>
+				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModal">Приєднатися</button>
 			</div>
 		</div>
 	</div>
@@ -18,7 +18,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Компанія</h2>
-				<p class="section_subheading">Стратегічною метою нашої компанії є лідерство серед глобальних енергетичних компаній Європи за допомогою диверсифікації ринків збуту, забезпечення надійності поставок та зростання ефективності діяльності.</p>
+				<p class="section_subheading">Стратегічною метою нашої компанії є лідерство серед глобальних енергетичних компаній Європи за допомогою диверсифікації ринків збуту, забезпечення надійності поставок та зростання ефективності діяльності</p>
 			</div>
 		</div>
 		<div class="row">
@@ -28,7 +28,7 @@
 						<img src="<?php assets_url('img/mission_icon.png') ?>" alt="mission_icon">
 					</div>
 					<h3>Місія</h3>
-					<p>Наша місія полягає в надійному, ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями.</p>
+					<p>Наша місія полягає в надійному, ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями</p>
 				</div>	
 			</div>
 			<div class="col-md-4 equal">
@@ -37,7 +37,7 @@
 						<img src="<?php assets_url('img/goal_icon.png') ?>" alt="goal_icon">
 					</div>
 					<h3>Мета</h3>
-					<p>Наша мета полягає в надійному, ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями.</p>
+					<p>Наша мета полягає в надійному, ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями</p>
 				</div>	
 			</div>
 			<div class="col-md-4 equal">
@@ -46,7 +46,7 @@
 						<img src="<?php assets_url('img/values_icon.png') ?>" alt="values_icon">
 					</div>
 					<h3>Цінності</h3>
-					<p>Наші цінності полягають у надійному, ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями.</p>
+					<p>Наші цінності полягають у надійному, ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями</p>
 				</div>	
 			</div>
 		</div>
@@ -81,10 +81,14 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Партнери</h2>
-				<!-- <p class="section_subheading">Стратегічною метою нашої компанії є лідерство серед глобальних енергетичних компаній Європи.</p> -->
+				<p class="section_subheading">Ми цiнуємо наших партнерів за вибір нашої компанії та гарантуємо їм найкращі умови співпраці та бездоганний сервіс</p>
+				<p></p>
 				<div class="partners partners_slider">
 					<div class="partner_item">
 						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-arcelor.png') ?>" alt="arcelor" />
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/oboronprom-logo.png') ?>" alt="oboronprom" />
 					</div>
 					<div class="partner_item">
 						<img class="img img-fluid" src="<?php assets_url('img/partners/kamelia-logo.png') ?>" alt="kamelia" />
@@ -112,6 +116,12 @@
 					</div>
 					<div class="partner_item">
 						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-spetstechno.png') ?>" alt="spetstechno" />		
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-rsz.png') ?>" alt="rsz" />	
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />		
 					</div>
 				</div>
 			</div>

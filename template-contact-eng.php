@@ -6,24 +6,24 @@
 		<div class="row contact_page_row">
 			<div class="col-lg-2 col-md-4 col-sm-12">
 				<div class="contact_tel">
-					<h4>Телефон</h4>
+					<h4>Phone</h4>
 					<p><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
 				</div>
 				<div class="contact_email">
-					<h4>Пошта</h4>
+					<h4>Email</h4>
 					<p><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
 				</div>
 				<div class="contact_address">
-					<h4>Адреса</h4>
-					<p>вул. Жилянська, 75</p>
-					<p>БЦ "Эвразія" (11 поверх)</p>
-					<p>04080, м. Київ</p>
+					<h4>Address</h4>
+					<p>Zhylianska st. 75,</p>
+					<p>BC "Eurasia" (11 flor)</p>
+					<p>04080, Kyiv</p>
 				</div>
 				<div class="contact_schedule">
-					<h4>Графік роботи</h4>
-					<p>Пн-Чт: 09:00 - 18:00</p>
-					<p>Пт: 09.00 - 17.00</p>
-					<p>Обід: 13.00 - 14.00</p>
+					<h4>Schedule</h4>
+					<p>Mon-Th: 09:00 - 18:00</p>
+					<p>Fr: 09.00 - 17.00</p>
+					<p>break: 13.00 - 14.00</p>
 				</div>
 			</div>
 			<div class="map_block col-lg-10 col-md-8 col-sm-12">

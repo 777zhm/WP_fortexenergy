@@ -5,13 +5,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 dispute_page_row">
-				<h3>Врегулювання спорів</h3>
-				<p>У випадку виникнення будь-яких спірних питань, будь ласка звертайтеся за адресою: 04080, м. Київ, вул. вул. Жилянська, 75, БЦ "Эвразія" (11 поверх), з вівторка по четвер з 14:00 до 17:00, або за телефоном <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
-				<p>Особа, відповідальна за врегулювання спорів та суперечок: <strong>Директор – Момот Олександр Павлович.</strong></p>
-				<p>Усі спори і розбіжності, які можуть виникнути щодо тлумачення і застосування Договору постачання природного газу або в зв&#8217;язку з ним, або інші суперечки, які можуть виникнути при взаємодії між Постачальником і Споживачем будуть вирішуватися шляхом переговорів і консультацій.</p>
-				<p>У випадку недосягнення згоди шляхом переговорів, споживач має право звернутися із заявою про вирішення спору до Регулятора ринку природного газу у відповідності до статті 21 Закону України «Про Національну комісію, що здійснює державне регулювання у сферах енергетики та комунальних послуг» та/або передати спір на розгляд до суду у відповідності з чинним законодавством України.</p>
-				<p>Врегулювання суперечок Регулятором або його Територіальним підрозділом здійснюється відповідно до затвердженого Регулятором порядку.</p>
-				<p>Звернення до Регулятора або його Територіального підрозділу не позбавляє Сторони права на вирішення спору в судовому порядку.</p>
+				<h3>Dispute settlement</h3>
+				<p>All disputes and differences that may arise in relation to the interpretation and application of the Natural Gas Supply Agreement or in connection therewith, or other disputes that may arise in the interaction between the Supplier and the Consumer will be resolved through negotiations and consultations.</p>
+				<p>In case of failure to reach an agreement by negotiation, the consumer has the right to file a petition for resolution of the dispute to the Natural Gas Market Regulator in accordance with Article 21 of the Law of Ukraine "On the National Commission that carries out state regulation in the fields of energy and utilities" and / or to submit a dispute to trial to the court in accordance with the current legislation of Ukraine.</p>
+				<p>Settlement of disputes by the Regulator or its Territorial Units shall be in accordance with the procedure approved by the Regulator.</p>
+				<p>An appeal to the Regulator or its Territorial Units does not deprive the Parties of the right to resolve the dispute in court.</p>
+				<p>In case of any disputable issues, please contact:</p>
+				<p>04080, Kyiv, Zhylianska st. 75,</p>
+				<p>from Tuesday to Thursday 14:00 - 17:00,</p>
+				<p>by phone +38 (044) 228 96 01</p>
+				<p>Person responsible for settling disputes: Director Momot Alexandr.</p>
 			</div>
 		</div>
 	</div>

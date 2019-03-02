@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="entry-title">Постачання природного газу</h2>
+				<h2 class="entry-title">Natural gas</h2>
 			</div>
 		</div>
 		<div class="row">
