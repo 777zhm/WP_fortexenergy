@@ -3,10 +3,7 @@
 <footer class="footer">
 	<div class="container">
 		<div class="row justify-content-between align-items-center">
-			<div class="logotype col-md-2 col-sm-6 col-6">
-				<?php if ( has_custom_logo() ) : the_custom_logo(); endif; ?>	
-			</div>
-			<div class="main_menu col-md-10 d-none d-lg-block">
+			<div class="main_menu col-md-12 d-none d-lg-block">
 				<?php wp_nav_menu( array('theme_location' => 'footer_menu') ); ?>
 			</div>
 		</div>

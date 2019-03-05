@@ -387,9 +387,6 @@ header a:hover, footer a:hover{
 
 
 /* End Buttons */
-/* Start Forms */
-
-/* End Forms */
 /* Start decorative */
 .equal{
   display: flex;
@@ -532,6 +529,66 @@ header a:hover, footer a:hover{
 }
 
 /* End partners_section */
+/** Start Contact_section **/
+.contacts_row h2{
+	text-align: left;
+}
+
+.contacts_icon_box{
+	display: inline-block;
+	width: 30px;
+}
+
+.contacts_icon_box img{
+	max-height: 20px;
+	max-width: 20px;
+}
+
+.footer_form{
+	width: 100%;
+	padding-right: 40px;
+}
+
+.footer_form input{
+	height: 50px;
+
+	border: 1px solid #D3DEEC;
+	box-sizing: border-box;
+	border-radius: 5px;
+
+	font-size: 12px;
+	font-weight: 500;
+	line-height: normal;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	color: #A6B9CF;
+	
+	padding-left: 24px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer_form_button_submit{
+	height: 50px;
+	width: 100%;
+	max-width: 800px;
+
+	font-weight: 600;
+	line-height: normal;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.map_block{
+	padding-left: 0;
+	padding-right: 0;
+}
+/** End Contact_section **/
 /** End Main page **/
 /* Start Modal window */
 .modal-dialog{
@@ -704,53 +761,6 @@ section.aboutus_mainscreen{
 }
 
 /** End Gas/Energy/Dispute page **/
-/** Start Contact page **/
-.contact_page_section{
-	padding-top: 32px;
-	padding-bottom: 32px;
-}
-
-.map_block{
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.contact_page_section h4{
-	margin-bottom: 4px;
-}
-
-.contact_tel a{
-	color: #000000;
-	font-size: 1em;
-	font-weight: 700;
-	text-decoration: none;
-}
-
-.contact_tel a:hover{
-	color: #29D19A;
-}
-
-.contact_email a{
-	text-decoration: none;
-}
-
-.contact_email a:hover{
-	color: #29D19A;
-}
-
-
-.contact_schedule p {
-	margin-bottom: 2px;
-}
-
-.contact_address{
-	margin-bottom: 16px;
-}
-
-.contact_address p{
-	margin-bottom: 2px;
-}
-/** End Contact page **/
 /*** Start Media query ***/
 /* Start max-width: 992px and min-width: 1199px */
 @media (min-width: 992px) and (max-width: 1199px)  {
@@ -759,6 +769,10 @@ section.aboutus_mainscreen{
 }/* End max-width: 992px and min-width: 1199px */
 /* Start max-width: 991px*/
 @media (max-width: 991px)  {
+
+.contacts_row h2{
+	text-align: center;
+}
 
 
 } /* End max-width: 991px*/

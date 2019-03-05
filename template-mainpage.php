@@ -16,7 +16,7 @@
 <section class="company_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Компанія</h2>
 				<p class="section_subheading">Стратегічною метою нашої компанії є лідерство серед глобальних енергетичних компаній Європи за допомогою диверсифікації ринків збуту, забезпечення надійності поставок та зростання ефективності діяльності</p>
 			</div>
@@ -55,7 +55,7 @@
 <section class="products_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Послуги</h2>
 				<!-- <p class="section_subheading">FORTEX ENERGY - енергетична компанія, діяльністю якої є своєчасне постачання природного газу та електроенергії споживачам.</p> -->
 			</div>
@@ -79,7 +79,7 @@
 <section class="partners_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Партнери</h2>
 				<p class="section_subheading">Ми цiнуємо наших партнерів за вибір нашої компанії та гарантуємо їм найкращі умови співпраці та бездоганний сервіс</p>
 				<p></p>
@@ -124,6 +124,57 @@
 						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />		
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="advantages_section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
+				<h2 class="text-center">Переваги</h2>
+				<p class="section_subheading">Стратегічною метою нашої компанії є лідерство серед глобальних енергетичних компаній Європи за допомогою диверсифікації ринків збуту, забезпечення надійності поставок та зростання ефективності діяльності</p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+
+			</div>
+			<div class="col-md-6">
+
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contacts_section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 col-md-10 col-sm-12">
+				<div class="row contacts_row">
+					<div class="col-12">
+						<h2>Контакти</h2>
+					</div>
+					<div class="col-6 contact_telephone">
+						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_mail.png') ?>" alt="icon_mail"></span><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
+						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_tel.png') ?>" alt="icon_tel"></span><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
+					</div>
+					<div class="col-6 contact_schedule">
+						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_schedule.png') ?>" alt="icon_schedule"></span>Пн-Чт: 09:00 - 18:00</p>
+						<p><span class="contacts_icon_box"></span>Пт: 09:00 - 17:00</p>
+						<p><span class="contacts_icon_box"></span>Обід: 13:00 - 14:00</p>
+					</div>
+				</div>
+				<div class="row contacts_form_row justify-content-center">
+					<form class="footer_form">
+						<input type="text" class="form-control" placeholder="Ім'я" name="username" required>
+						<input type="email" class="form-control" placeholder="Електронна адреса" name="useremail" required>
+						<input type="tel" class="form-control" placeholder="Телефон" name="usertelephone" required>
+						<button type="submit" class="btn_filled footer_form_button_submit">Відправити</button>
+					</form>
+				</div>
+			</div>
+			<div class="map_block col-lg-6 col-md-10 col-sm-12">
+				<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1160789600235!2d30.496578815730928!3d50.43893847947378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef1c6cb39e5%3A0x258681f2cb3b1854!2sEurasia%2C+Zhylianska+St%2C+75%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1550179914993" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
