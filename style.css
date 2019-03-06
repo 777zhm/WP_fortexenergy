@@ -92,7 +92,7 @@ p {
 }
 
 .colored_text{
-	color: #29D19A; /*#24bc8a;*/
+	color: #29D19A;
 }
 
 p.colored_text{
@@ -521,6 +521,39 @@ header a:hover, footer a:hover{
 }
 
 /* End products_section */
+/* Start advantages_section */
+.square_decorative{
+	background: #29D19A;
+	border-radius: 5px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	position: relative;
+	margin: 4px auto 20px;
+}
+
+.square_decorative img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	height: 24px;
+	width: auto;
+	max-height: 30px;
+	max-width: 30px;
+}
+
+.advantages_section h4{
+	text-transform: none;
+}
+
+.advantages_item{
+	margin-bottom: 20px;
+}
+/* End advantages_section */
 /* Start partners_section */
 .partners_section .section_subheading{
 	margin-bottom: 40px;
@@ -793,13 +826,13 @@ section.aboutus_mainscreen{
 	padding-left: 0px;
 }
 /** End Aboutus page **/
-/** Start Gas/Energy/Dispute page **/
-.gas_page_section, .energy_page_section, .dispute_page_section{
+/** Start Gas/Energy/Payments page **/
+.gas_page_section, .energy_page_section, .payments_page_section{
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
 
-.gas_page_section h3:hover, .energy_page_section h3:hover, .dispute_page_section h3:hover{
+.gas_page_section h3:hover, .energy_page_section h3:hover, .payments_page_section h3:hover{
 	color: #29D19A;
 }
 

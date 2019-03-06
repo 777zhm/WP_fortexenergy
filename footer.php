@@ -62,29 +62,29 @@
 				<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
-				<p>У випадку виникнення будь-яких спірних питань, будь ласка, звертайтеся за адресою: 02000, м. Київ, вул. Жилянська, буд. 75, поверх 11, з вівторка по четвер з 14:00 до 17:00, за телефоном +38 (044) 228 96 01.</p>
-				<p>Особа, відповідальна за врегулювання спорів та суперечок: <strong>Директор Момот Олександр Павлович</strong>.</p>
+				<p>У випадку виникнення будь-яких спірних питань, будь ласка звертайтеся за адресою: 02000, м. Київ, вул. вул. Жилянська 75, БЦ "Эвразія" (11 поверх), з вівторка по четвер з 14:00 до 17:00 або за телефоном <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
+				<p>Особа, відповідальна за врегулювання спорів та суперечок: <span class="colored_text">Директор</span> <strong>Момот Олександр Павлович</strong>.</p>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- End Modal Dispute -->
+<!-- End Modal Dispute UKR -->
 <!-- Start Modal Dispute ENG-->
 <div class="modal fade dispute_modal" id="disputeModalEng" tabindex="-1" role="dialog" aria-labelledby="disputeModalEng" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title">Dispute settlement</h4>
+				<h4 class="modal-title">Disputes</h4>
 				<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
-				<p>У випадку виникнення будь-яких спірних питань, будь ласка, звертайтеся за адресою: 02000, м. Київ, вул. Жилянська, буд. 75, поверх 11, з вівторка по четвер з 14:00 до 17:00, за телефоном +38 (044) 228 96 01.</p>
-				<p>Особа, відповідальна за врегулювання спорів та суперечок: <strong>Директор Момот Олександр Павлович</strong>.</p>
+				<p>In case of any disputable issues, please contact: 02000, Zhylianska st. 75, Kyiv, business center "Eurasia" (floor 11) from Tuesday to Thursday 14:00 - 17:00 or by phone <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
+				<p>Person responsible for settling disputes: <span class="colored_text">Director</span> <strong>Momot Alexandr</strong>.</p>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- End Modal Dispute -->
+<!-- End Modal Dispute ENG -->
 
 
 <?php wp_footer(); ?>

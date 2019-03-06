@@ -40,7 +40,7 @@
 						<img src="<?php assets_url('img/goal_icon.png') ?>" alt="goal_icon">
 					</div>
 					<h3>Мета</h3>
-					<p>Наша мета полягає в надійному, ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями</p>
+					<p>Наша мєта це підтримання найвищих стандартів роботи з клієнтами</p>
 				</div>	
 			</div>
 			<div class="col-md-4 equal">
@@ -49,7 +49,7 @@
 						<img src="<?php assets_url('img/values_icon.png') ?>" alt="values_icon">
 					</div>
 					<h3>Цінності</h3>
-					<p>Наші цінності полягають у надійному, ефективному і збалансованому забезпеченні споживачів природним газом та енергоносіями</p>
+					<p>Нашими цiнностями є лідерство, рішучість, довірчі та взаємовигідні стосунки з нашими партнерами та клієнтами, бездоганне виконнання наших зобов'язань</p>
 				</div>	
 			</div>
 		</div>
@@ -90,9 +90,9 @@
 <section class="partners_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="сol-md-11 col-sm-12">
+			<div class="сol-md-10 col-sm-12">
 				<h2 class="text-center">Постачальники</h2>
-				<p class="section_subheading">Ми цiнуємо наших постачальників за вибір нашої компанії та гарантуємо їм найкращі умови співпраці та бездоганний сервіс</p>
+				<p class="section_subheading">Ми спiвпрацюємо з найкращими мiсцевими та закордонними посталачьниками енергоресурсів</p>
 			</div>
 		</div>
 		<div class="row justify-content-center">
@@ -130,45 +130,55 @@
 <section class="advantages_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Досягнення</h2>
 			</div>
 		</div>
-		<div class="row justify-content-center">
-			<div class="col-md-4">
+		<div class="row justify-content-center text-center">
+			<div class="col-md-4 col-sm-6 advantages_item">
 				<div class="square_decorative">
 					<img src="<?php assets_url('img/advantage_icon_1.svg') ?>" alt="advantage_icon_1">
 				</div>
-				<h4 class="advantage_heading"><span class="advantage_number">5</span> років</h4>
-				<p class="advantage_subheading"></p>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">5</span> Років</h4>
+					<p class="advantage_subheading">досвіду в торгівлі газом на ринку України</p>
+				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6 advantages_item">
 				<div class="square_decorative">
 					<img src="<?php assets_url('img/advantage_icon_2.svg') ?>" alt="advantage_icon_2">
 				</div>
-				<h4 class="advantage_heading"><span class="advantage_number">3</span> роки</h4>
-				<p class="advantage_subheading"></p>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">3</span> Роки</h4>
+					<p class="advantage_subheading">досвіду в трейдингу газу</p>
+				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6 advantages_item">
 				<div class="square_decorative">
 					<img src="<?php assets_url('img/advantage_icon_3.svg') ?>" alt="advantage_icon_3">
 				</div>
-				<h4 class="advantage_heading"><span class="advantage_number">10</span> постачальників</h4>
-				<p class="advantage_subheading"></p>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">10</span> Угод</h4>
+					<p class="advantage_subheading">з постачальниками</p>
+				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6 advantages_item">
 				<div class="square_decorative">
 					<img src="<?php assets_url('img/advantage_icon_4.svg') ?>" alt="advantage_icon_4">
 				</div>
-				<h4 class="advantage_heading"><span class="advantage_number">20</span> клієнтів</h4>
-				<p class="advantage_subheading"></p>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">20</span>+ Клієнтів</h4>
+					<p class="advantage_subheading">більше двадцяти клієнтів</p>
+				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6 advantages_item">
 				<div class="square_decorative">
 					<img src="<?php assets_url('img/advantage_icon_5.svg') ?>" alt="advantage_icon_5">
 				</div>
-				<h4 class="advantage_heading"><span class="advantage_number">25</span> мільйонів м<sup>3</sup></h4>
-				<p class="advantage_subheading"></p>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">25</span> Мільйонів м<sup>3</sup></h4>
+					<p class="advantage_subheading">поставок газу на рiк<br>(2,1 млн м3/мiс)</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -176,7 +186,7 @@
 <section class="partners_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="сol-md-11 col-sm-12">
+			<div class="сol-md-10 col-sm-12">
 				<h2 class="text-center">Партнери</h2>
 				<p class="section_subheading">Ми цiнуємо наших партнерів за вибір нашої компанії та гарантуємо їм найкращі умови співпраці та бездоганний сервіс</p>
 			</div>
@@ -221,7 +231,7 @@
 						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-rsz.png') ?>" alt="rsz" />	
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />		
+						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />	
 					</div>
 				</div>
 			</div>

@@ -19,7 +19,7 @@
 <section class="company_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Company</h2>
 				<p class="section_subheading">The strategic goal of the company is to become a leader among global energy-resource companies within Europe by diversifying its sales markets, ensuring reliability of supplies, and constantly increasing the efficiency of operations</p>
 			</div>
@@ -49,7 +49,7 @@
 						<img src="<?php assets_url('img/values_icon.png') ?>" alt="values_icon">
 					</div>
 					<h3>Values</h3>
-					<p>Our values are leadership, determination, building trustful and mutually-beneficial business relationships with our partners and clients, impeccable execution of our obligations, sustainability and stability</p>
+					<p>Our values are leadership, determination, trustful and mutually-beneficial business relationships with our partners and clients, impeccable execution of our obligations</p>
 				</div>	
 			</div>
 		</div>
@@ -58,43 +58,141 @@
 <section class="products_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Services</h2>
 				<p class="section_subheading">FORTEX ENERGY is an energy-resource company whose activity is timely and flawless supply of natural gas and electricity to consumers</p>
 			</div>
 		</div>
-
-<div class="row justify-content-center">
-	<div class="col-md-6 equal">
-		<div class="product_item">
-			<div class="product_gas_icon">
+		<div class="row justify-content-center">
+			<div class="col-md-6 equal">
+				<div class="product_item">
+					<div class="product_gas_icon">
+					</div>
+					<div class="product_gas_text">
+						<h3><a href="/en/natural-gas/">Gas</a></h3>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
+					</div>
+				</div>
 			</div>
-			<div class="product_gas_text">
-				<h3><a href="/en/natural-gas/">Gas</a></h3>
-				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
+			<div class="col-md-6 equal">
+				<div class="product_item">
+					<div class="product_electricity_icon">
+					</div>
+					<div class="product_electricity_text">
+						<h3><a href="/en/electricity/">Electricity</a></h3>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="col-md-6 equal">
-		<div class="product_item">
-			<div class="product_electricity_icon">
-			</div>
-			<div class="product_electricity_text">
-				<h3><a href="/en/electricity/">Electricity</a></h3>
-				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
-			</div>
-		</div>
-	</div>
-</div>
-
 	</div>
 </section>
 <section class="partners_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-lg-8 col-md-10 col-sm-12">
+			<div class="сol-md-10 col-sm-12">
+				<h2 class="text-center">Suppliers</h2>
+				<p class="section_subheading">We work with the best local and foreign energy-resource suppliers</p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-md-10 col-sm-12">
+				<div class="partners partners_slider">
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_1.png') ?>" alt="supplier_1" />
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_2.jpg') ?>" alt="supplier_2" />
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_3.jpg') ?>" alt="supplier_3" />
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_4.png') ?>" alt="supplier_4" />	
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_5.jpeg') ?>" alt="supplier_5" />
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_6.png') ?>" alt="supplier_6" />
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_7.jpg') ?>" alt="supplier_7" />		
+					</div>
+					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_8.png') ?>" alt="supplier_8" />	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="advantages_section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-md-10 col-sm-12">
+				<h2 class="text-center">Achievements</h2>
+			</div>
+		</div>
+		<div class="row justify-content-center text-center">
+			<div class="col-md-4 col-sm-6 advantages_item">
+				<div class="square_decorative">
+					<img src="<?php assets_url('img/advantage_icon_1.svg') ?>" alt="advantage_icon_1">
+				</div>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">5</span> Years</h4>
+					<p class="advantage_subheading">natural gas experiene in Ukraine market</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 advantages_item">
+				<div class="square_decorative">
+					<img src="<?php assets_url('img/advantage_icon_2.svg') ?>" alt="advantage_icon_2">
+				</div>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">3</span> Years</h4>
+					<p class="advantage_subheading">trading experience</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 advantages_item">
+				<div class="square_decorative">
+					<img src="<?php assets_url('img/advantage_icon_3.svg') ?>" alt="advantage_icon_3">
+				</div>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">10</span> Suppliers</h4>
+					<p class="advantage_subheading">deal with 10 different suppliers</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 advantages_item">
+				<div class="square_decorative">
+					<img src="<?php assets_url('img/advantage_icon_4.svg') ?>" alt="advantage_icon_4">
+				</div>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">20</span>+ Clients</h4>
+					<p class="advantage_subheading">supplied around 20 clients</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 advantages_item">
+				<div class="square_decorative">
+					<img src="<?php assets_url('img/advantage_icon_5.svg') ?>" alt="advantage_icon_5">
+				</div>
+				<div>
+					<h4 class="advantage_heading"><span class="advantage_number">25</span> Millions m<sup>3</sup></h4>
+					<p class="advantage_subheading">поставок газу на рiк<br>(2,1 mill м3/month)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="partners_section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="сol-md-10 col-sm-12">
 				<h2 class="text-center">Partners</h2>
 				<p class="section_subheading">We appreciate our partners for choosing us among other energy-resource suppliers and reward them with individual solutions and excellent service</p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<div class="partners partners_slider">
 					<div class="partner_item">
 						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-arcelor.png') ?>" alt="arcelor" />
@@ -130,10 +228,10 @@
 						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-spetstechno.png') ?>" alt="spetstechno" />		
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-rsz.png') ?>" alt="rsz" />		
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-rsz.png') ?>" alt="rsz" />	
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />		
+						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />
 					</div>
 				</div>
 			</div>
@@ -151,7 +249,7 @@
 					<div class="col-6 contact_telephone">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_mail.png') ?>" alt="icon_mail"></span><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_tel.png') ?>" alt="icon_tel"></span><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModalEng">Dispute settlement</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModalEng">Disputes</button>
 					</div>
 					<div class="col-6 contact_schedule">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_schedule.png') ?>" alt="icon_schedule"></span>Mon-Thr: 09:00 - 18:00</p>
