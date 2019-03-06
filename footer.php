@@ -2,16 +2,16 @@
 
 <footer class="footer">
 	<div class="container">
-		<div class="row justify-content-between align-items-center">
-			<div class="main_menu col-md-12 d-none d-lg-block">
-				<?php wp_nav_menu( array('theme_location' => 'footer_menu') ); ?>
+		<div class="row">
+			<div class="col-12">
+				<p></p>
 			</div>
 		</div>
 	</div>
 </footer>
 <div class="backtotop_button"></div>
 
-<!-- Start Modal -->
+<!-- Start Modal Form -->
 <div class="modal fade" id="consultationModal" tabindex="-1" role="dialog" aria-labelledby="consultationModal" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
@@ -31,7 +31,23 @@
 		</div>
 	</div>
 </div>
-<!-- End Modal -->
+<!-- End Modal Form -->
+<!-- Start Modal Dispute -->
+<div class="modal fade" id="disputeModal" tabindex="-1" role="dialog" aria-labelledby="disputeModal" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Вирішення спорів</h4>
+				<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<p>У випадку виникнення будь-яких спірних питань, будь ласка, звертайтеся за адресою: 04080, м. Київ, вул. Новокостянтинівська, буд. 18, поверх 1, оф. 1, з вівторка по четвер з 14:00 до 17:00, за телефоном +38 (044) 228 96 01.</p>
+				<p>Особа, відповідальна за врегулювання спорів та суперечок: <strong>Директор Момот Олександр Павлович</strong>.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Modal Dispute -->
 
 <?php wp_footer(); ?>
 </body>

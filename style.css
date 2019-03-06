@@ -56,9 +56,9 @@ h4, h5, h6{
 }
 
 h1{
-	font-size: 2em;
+	font-size: 1.875em;
 	margin-bottom: 40px;
-	line-height: 56px;
+	line-height: 44px;
 	text-transform: uppercase;
 }
 
@@ -106,7 +106,7 @@ p.colored_text{
 	font-size: 18px;
 	text-align: center;
 	letter-spacing: 0.5px;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 
 ul, ol{
@@ -260,14 +260,11 @@ header a:hover, footer a:hover{
 	position: relative;
 	padding: 5px 0 5px;
 	font-size: 1em;
-	border: 1px solid #2A3540;
-	border-radius: 50px;
 	padding: 8px;
 }
 
 .lang_menu ul li a:hover {
 	color: #29D19A;
-	border: 1px solid #29D19A;
 }
 /* End Language Menu */
 /* Start Mobile Menu */
@@ -411,15 +408,20 @@ header a:hover, footer a:hover{
 
 /* End decorative */
 /** Start Main page **/
-.heroscreen_section, .company_section, .products_section, .partners_section{
+.company_section, .products_section, .partners_section{
 	padding-top: 70px;
 	padding-bottom: 50px;
 }
 /* Start heroscreen_section */
-.heroscreen_section{
-	background-repeat: no-repeat;
-	background-position: 85% 90%;
+.heroscreen_box{
+	padding-bottom: 10px;
+}
+
+.heroscreen_bg{
+	min-height: 475px;
 	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 .heroscreen_section .section_subheading{
@@ -439,6 +441,10 @@ header a:hover, footer a:hover{
 
 /* End heroscreen_section */
 /* Start company_section */
+.company_section .section_subheading{
+	margin-bottom: 100px;
+}
+
 .company_item{
 	position: relative;
 	text-align: center;
@@ -448,7 +454,7 @@ header a:hover, footer a:hover{
 	box-shadow: 0px 0px 4px #E9E9E9;
 	border-radius: 10px;
 
-	margin: 0 15px;
+	margin: 10px 15px;
 	padding: 60px 25px 20px 25px;
 	width: 100%;
 }
@@ -487,30 +493,41 @@ header a:hover, footer a:hover{
 	box-shadow: 0px 0px 4px #E9E9E9;
 	border-radius: 10px;
 
-	padding: 25px 50px;
-	margin: 0 15px;
+	padding: 4px 20px;
+	margin: 10px 15px;
 
 	width: 100%;
 	text-align: center;
 }
 
-.product_gas{
-	background-image: url(assets/img/gas_icon.png);
+.product_gas_icon{
+	min-height: 80px;
+	background-image: url(assets/img/gas_icon.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.product_electricity{
-	background-image: url(assets/img/energy_icon.png);
+.product_electricity_icon{
+	min-height: 80px;
+	background-image: url(assets/img/energy_icon.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
-
-
 
 .product_item a:hover{
 	text-decoration: none;
 }
 
+.product_gas_text, .product_electricity_text{
+	padding-bottom: 16px;
+}
 
 /* End products_section */
 /* Start partners_section */
+.partners_section .section_subheading{
+	margin-bottom: 40px;
+}
+
 .partner_item{
   position: relative;
   text-align: center;
@@ -524,8 +541,8 @@ header a:hover, footer a:hover{
   left:0;
   right:0;
   margin:auto;
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 120px;
+  max-width: 120px;
 }
 
 /* End partners_section */
@@ -590,15 +607,17 @@ header a:hover, footer a:hover{
 }
 /** End Contact_section **/
 /** End Main page **/
-/* Start Modal window */
-.modal-dialog{
-	max-width: 400px;
-}
+/* Start Modal Form */
 .modal{
   background-color: rgba(0,0,0,0.15);
 }
 
-.modal-content{
+
+#consultationModal .modal-dialog{
+	max-width: 400px;
+}
+
+#consultationModal .modal-content{
 	background-color: #FFFFFF;
 	color: #62758C;
 
@@ -606,13 +625,13 @@ header a:hover, footer a:hover{
 	border-radius: 10px 10px 0px 0px;
 }
 
-.modal-header{
+#consultationModal .modal-header{
 	border-bottom: none;
 	border-radius: 10px 10px 0px 0px;
 	background: #29D19A;
 }
 
-.modal-title{
+#consultationModal .modal-title{
 	color: #ffffff;
 	margin: auto;
 	font-weight: bold;
@@ -623,16 +642,15 @@ header a:hover, footer a:hover{
 	text-transform: uppercase;
 }
 
-.down_arrow_box{
+#consultationModal .down_arrow_box{
 	padding-right: 16px;
 }
 
-.modal-body{
+#consultationModal .modal-body{
 	padding: 10px 25px 10px 25px;
 }
 
-
-.modal-body input{
+#consultationModal .modal-body input{
 	height: 50px;
 
 	border: 1px solid #D3DEEC;
@@ -651,7 +669,7 @@ header a:hover, footer a:hover{
 	margin-bottom: 20px;
 }
 
-.modal_button_submit{
+#consultationModal .modal_button_submit{
 	height: 50px;
 	width: 100%;
 	max-width: 400px;
@@ -667,8 +685,60 @@ header a:hover, footer a:hover{
 	margin-bottom: 30px;
 }
 
-/* End Modal window */
+/* End Modal Form */
+/* Start Modal Dispute */
+#disputeModal .modal-content{
+	padding: 7px 40px 30px 40px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.1);
+	border: none;
+	border-radius: 10px;
+	color: #62758C;
+}
 
+#disputeModal .modal-header{
+	border-bottom: none;
+}
+
+#disputeModal .modal-title{
+	margin: auto;
+	font-weight: bold;
+	line-height: 23px;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.5px;
+
+	color: #2A3540;
+	text-transform: none;
+}
+
+#disputeModal .modal-body{
+	font-weight: 600;
+	line-height: 17px;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.5px;
+
+	color: #62758C;
+	padding: 0;
+}
+
+button.close_modal{
+	position: absolute;
+	top: 14px;
+	right: 30px;
+	background-color: #ffffff;
+	color: #29D19A;
+	border: none;
+	font-size: 26px;
+
+}
+
+#disputeModal strong{
+	color: #000000;
+}
+
+/* End Modal Dispute */
 /** Start Aboutus page **/
 section.aboutus_mainscreen{
 	background: url('img/about_bg.jpg') center bottom no-repeat;
@@ -765,19 +835,32 @@ section.aboutus_mainscreen{
 /* Start max-width: 992px and min-width: 1199px */
 @media (min-width: 992px) and (max-width: 1199px)  {
 
+.heroscreen_bg{
+	min-height: 400px;
+	background-position: center;
+}
 
 }/* End max-width: 992px and min-width: 1199px */
 /* Start max-width: 991px*/
 @media (max-width: 991px)  {
 
+.heroscreen_bg{
+	min-height: 400px;
+	background-position: center;
+}
+
 .contacts_row h2{
 	text-align: center;
 }
 
-
 } /* End max-width: 991px*/
 /* Start max-width: 767px */
 @media (max-width: 767px)  {
+
+.heroscreen_bg{
+	min-height: 300px;
+	background-position: center;
+}
 
 .backtotop_button{
   position: fixed;

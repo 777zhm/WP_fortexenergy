@@ -1,14 +1,17 @@
 <?php /* Template Name: Mainpage eng Template */ ?>
 <?php get_header(); ?>
 
-<section class="heroscreen_section" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
+<section class="heroscreen_section">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-lg-7">
+			<div class="heroscreen_box col-lg-7">
 				<h1>Reliable supplier of gas and electricity for local and foreign consumers</h1>
 				<p class="section_subheading">Modern energy-resource company which understands the needs of customers</p>
 				<button class="btn_filled">Our tariffs</button>
 				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
+			</div>
+			<div class="heroscreen_bg col-lg-5" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
+				
 			</div>
 		</div>
 	</div>
@@ -60,20 +63,30 @@
 				<p class="section_subheading">FORTEX ENERGY is an energy-resource company whose activity is timely and flawless supply of natural gas and electricity to consumers</p>
 			</div>
 		</div>
-		<div class="row justify-content-center">
-			<div class="col-md-6 equal">
-				<div class="product_item product_gas">
-					<h3><a href="/en/natural-gas/">Gas</a></h3>
-					<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
-				</div>
+
+<div class="row justify-content-center">
+	<div class="col-md-6 equal">
+		<div class="product_item row">
+			<div class="product_gas_icon col-4">
 			</div>
-			<div class="col-md-6 equal">
-				<div class="product_item product_electricity">
-					<h3><a href="/en/electricity/">Electricity</a></h3>
-					<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
-				</div>
+			<div class="product_gas_text col-8">
+				<h3><a href="/en/natural-gas/">Gas</a></h3>
+				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
 			</div>
 		</div>
+	</div>
+	<div class="col-md-6 equal">
+		<div class="product_item row">
+			<div class="product_electricity_icon col-4">
+			</div>
+			<div class="product_electricity_text col-8">
+				<h3><a href="/en/electricity/">Electricity</a></h3>
+				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 	</div>
 </section>
 <section class="partners_section">
@@ -123,6 +136,42 @@
 						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />		
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contacts_section" id="contacts">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 col-md-10 col-sm-12">
+				<div class="row contacts_row">
+					<div class="col-12">
+						<h2>Contact us</h2>
+					</div>
+					<div class="col-6 contact_telephone">
+						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_mail.png') ?>" alt="icon_mail"></span><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
+						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_tel.png') ?>" alt="icon_tel"></span><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModal">Dispute settlement</button>
+					</div>
+					<div class="col-6 contact_schedule">
+						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_schedule.png') ?>" alt="icon_schedule"></span>Mon-Thr: 09:00 - 18:00</p>
+						<p><span class="contacts_icon_box"></span>Fr: 09:00 - 17:00</p>
+						<p><span class="contacts_icon_box"></span>Break: 13:00 - 14:00</p>
+					</div>
+				</div>
+				<div class="row contacts_form_row justify-content-center">
+					<div class="col-12">
+						<form class="footer_form">
+							<input type="text" class="form-control" placeholder="Name" name="username" required>
+							<input type="email" class="form-control" placeholder="Email" name="useremail" required>
+							<input type="tel" class="form-control" placeholder="Telephone" name="usertelephone" required>
+							<button type="submit" class="btn_filled footer_form_button_submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="map_block col-lg-6 col-md-10 col-sm-12">
+				<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1160789600235!2d30.496578815730928!3d50.43893847947378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef1c6cb39e5%3A0x258681f2cb3b1854!2sEurasia%2C+Zhylianska+St%2C+75%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1550179914993" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
