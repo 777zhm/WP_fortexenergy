@@ -158,8 +158,8 @@
 					<img src="<?php assets_url('img/advantage_icon_3.svg') ?>" alt="advantage_icon_3">
 				</div>
 				<div>
-					<h4 class="advantage_heading"><span class="advantage_number">10</span> Suppliers</h4>
-					<p class="advantage_subheading">deal with 10 different suppliers</p>
+					<h4 class="advantage_heading"><span class="advantage_number">50</span>+ Suppliers</h4>
+					<p class="advantage_subheading">deal with 50+ different suppliers</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 advantages_item">
@@ -177,7 +177,7 @@
 				</div>
 				<div>
 					<h4 class="advantage_heading"><span class="advantage_number">25</span> Millions m<sup>3</sup></h4>
-					<p class="advantage_subheading">поставок газу на рiк<br>(2,1 mill м3/month)</p>
+					<p class="advantage_subheading">поставок газу на рiк<br>(2,1 mill м<sup>3</sup>/month)</p>
 				</div>
 			</div>
 		</div>
@@ -246,12 +246,12 @@
 					<div class="col-12">
 						<h2>Contact us</h2>
 					</div>
-					<div class="col-6 contact_telephone">
+					<div class="col-sm-6 contact_telephone">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_mail.png') ?>" alt="icon_mail"></span><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_tel.png') ?>" alt="icon_tel"></span><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
 						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModalEng">Disputes</button>
 					</div>
-					<div class="col-6 contact_schedule">
+					<div class="col-sm-6 contact_schedule">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_schedule.png') ?>" alt="icon_schedule"></span>Mon-Thr: 09:00 - 18:00</p>
 						<p><span class="contacts_icon_box"></span>Fr: 09:00 - 17:00</p>
 						<p><span class="contacts_icon_box"></span>Break: 13:00 - 14:00</p>

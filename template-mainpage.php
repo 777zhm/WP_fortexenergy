@@ -40,7 +40,7 @@
 						<img src="<?php assets_url('img/goal_icon.png') ?>" alt="goal_icon">
 					</div>
 					<h3>Мета</h3>
-					<p>Наша мєта це підтримання найвищих стандартів роботи з клієнтами</p>
+					<p>Наша мета це підтримання найвищих стандартів операцiйної діяльності та роботи з клієнтами</p>
 				</div>	
 			</div>
 			<div class="col-md-4 equal">
@@ -49,7 +49,7 @@
 						<img src="<?php assets_url('img/values_icon.png') ?>" alt="values_icon">
 					</div>
 					<h3>Цінності</h3>
-					<p>Нашими цiнностями є лідерство, рішучість, довірчі та взаємовигідні стосунки з нашими партнерами та клієнтами, бездоганне виконнання наших зобов'язань</p>
+					<p>Нашими цiнностями є лідерство, рішучість, довірчі та взаємовигідні стосунки з нашими партнерами та клієнтами, бездоганне виконнання взятих на себе зобов'язань</p>
 				</div>	
 			</div>
 		</div>
@@ -60,7 +60,6 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Послуги</h2>
-				<!-- <p class="section_subheading">FORTEX ENERGY - енергетична компанія, діяльністю якої є своєчасне постачання природного газу та електроенергії споживачам.</p> -->
 			</div>
 		</div>
 		<div class="row justify-content-center">
@@ -158,7 +157,7 @@
 					<img src="<?php assets_url('img/advantage_icon_3.svg') ?>" alt="advantage_icon_3">
 				</div>
 				<div>
-					<h4 class="advantage_heading"><span class="advantage_number">10</span> Угод</h4>
+					<h4 class="advantage_heading"><span class="advantage_number">50</span>+ Угод</h4>
 					<p class="advantage_subheading">з постачальниками</p>
 				</div>
 			</div>
@@ -177,7 +176,7 @@
 				</div>
 				<div>
 					<h4 class="advantage_heading"><span class="advantage_number">25</span> Мільйонів м<sup>3</sup></h4>
-					<p class="advantage_subheading">поставок газу на рiк<br>(2,1 млн м3/мiс)</p>
+					<p class="advantage_subheading">поставок газу на рiк<br>(2,1 млн м<sup>3</sup>/мiс)</p>
 				</div>
 			</div>
 		</div>
@@ -188,7 +187,7 @@
 		<div class="row justify-content-center">
 			<div class="сol-md-10 col-sm-12">
 				<h2 class="text-center">Партнери</h2>
-				<p class="section_subheading">Ми цiнуємо наших партнерів за вибір нашої компанії та гарантуємо їм найкращі умови співпраці та бездоганний сервіс</p>
+				<p class="section_subheading">Ми цiнуємо наших партнерів за вибір нашої компанії та гарантуємо їм найкращі умови співпраці</p>
 			</div>
 		</div>
 		<div class="row justify-content-center">
@@ -246,12 +245,12 @@
 					<div class="col-12">
 						<h2>Контакти</h2>
 					</div>
-					<div class="col-6 contact_telephone">
+					<div class="col-sm-6 contact_telephone">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_mail.png') ?>" alt="icon_mail"></span><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_tel.png') ?>" alt="icon_tel"></span><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
 						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModalUkr">Вирішення спорів</button>
 					</div>
-					<div class="col-6 contact_schedule">
+					<div class="col-sm-6 contact_schedule">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_schedule.png') ?>" alt="icon_schedule"></span>Пн-Чт: 09:00 - 18:00</p>
 						<p><span class="contacts_icon_box"></span>Пт: 09:00 - 17:00</p>
 						<p><span class="contacts_icon_box"></span>Обід: 13:00 - 14:00</p>

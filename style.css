@@ -346,6 +346,7 @@ header a:hover, footer a:hover{
 	color: #62758C;
 
 	padding: 14px 32px;
+	margin-bottom: 10px;
 	max-width: 300px;
 }
 
@@ -374,6 +375,7 @@ header a:hover, footer a:hover{
 	text-transform: uppercase;
 
 	padding: 14px 32px;
+	margin-bottom: 10px;
 	max-width: 300px;
 }
 
@@ -903,6 +905,13 @@ section.aboutus_mainscreen{
   height: 33px;
   background-size: contain;
   background-image: url(assets/img/backtotop_icon.png);
+}
+
+.burger_open {
+	position: fixed;
+	top: 43px;
+	right: 20px;
+	font-size: 26px;
 }
 
 } /* End max-width: 767px*/
