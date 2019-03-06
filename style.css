@@ -484,34 +484,27 @@ header a:hover, footer a:hover{
 /* Start products_section */
 .product_item{
 	background: #FFFFFF;
-	background-size: auto;
-	background-repeat: no-repeat;
-	background-position: 20px 20px;
-
-	border: 1px solid #F1F1F1;
-	box-sizing: border-box;
-	box-shadow: 0px 0px 4px #E9E9E9;
-	border-radius: 10px;
-
-	padding: 4px 20px;
-	margin: 10px 15px;
-
 	width: 100%;
 	text-align: center;
+	margin: 10px;
 }
 
 .product_gas_icon{
-	min-height: 80px;
+	min-height: 240px;
 	background-image: url(assets/img/gas_icon.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 16px;
 }
 
 .product_electricity_icon{
-	min-height: 80px;
+	min-height: 240px;
 	background-image: url(assets/img/energy_icon.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 16px;
 }
 
 .product_item a:hover{
@@ -519,7 +512,12 @@ header a:hover, footer a:hover{
 }
 
 .product_gas_text, .product_electricity_text{
-	padding-bottom: 16px;
+	border: 1px solid #F1F1F1;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 4px #E9E9E9;
+	border-radius: 10px;
+
+	padding: 20px;
 }
 
 /* End products_section */
@@ -613,11 +611,11 @@ header a:hover, footer a:hover{
 }
 
 
-#consultationModal .modal-dialog{
+.form_modal .modal-dialog{
 	max-width: 400px;
 }
 
-#consultationModal .modal-content{
+.form_modal .modal-content{
 	background-color: #FFFFFF;
 	color: #62758C;
 
@@ -625,13 +623,13 @@ header a:hover, footer a:hover{
 	border-radius: 10px 10px 0px 0px;
 }
 
-#consultationModal .modal-header{
+.form_modal .modal-header{
 	border-bottom: none;
 	border-radius: 10px 10px 0px 0px;
 	background: #29D19A;
 }
 
-#consultationModal .modal-title{
+.form_modal .modal-title{
 	color: #ffffff;
 	margin: auto;
 	font-weight: bold;
@@ -642,15 +640,15 @@ header a:hover, footer a:hover{
 	text-transform: uppercase;
 }
 
-#consultationModal .down_arrow_box{
+.form_modal .down_arrow_box{
 	padding-right: 16px;
 }
 
-#consultationModal .modal-body{
+.form_modal .modal-body{
 	padding: 10px 25px 10px 25px;
 }
 
-#consultationModal .modal-body input{
+.form_modal .modal-body input{
 	height: 50px;
 
 	border: 1px solid #D3DEEC;
@@ -669,7 +667,7 @@ header a:hover, footer a:hover{
 	margin-bottom: 20px;
 }
 
-#consultationModal .modal_button_submit{
+.form_modal .modal_button_submit{
 	height: 50px;
 	width: 100%;
 	max-width: 400px;
@@ -687,7 +685,7 @@ header a:hover, footer a:hover{
 
 /* End Modal Form */
 /* Start Modal Dispute */
-#disputeModal .modal-content{
+.dispute_modal .modal-content{
 	padding: 7px 40px 30px 40px;
 	background-color: #FFFFFF;
 	box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.1);
@@ -696,11 +694,11 @@ header a:hover, footer a:hover{
 	color: #62758C;
 }
 
-#disputeModal .modal-header{
+.dispute_modal .modal-header{
 	border-bottom: none;
 }
 
-#disputeModal .modal-title{
+.dispute_modal .modal-title{
 	margin: auto;
 	font-weight: bold;
 	line-height: 23px;
@@ -712,7 +710,7 @@ header a:hover, footer a:hover{
 	text-transform: none;
 }
 
-#disputeModal .modal-body{
+.dispute_modal .modal-body{
 	font-weight: 600;
 	line-height: 17px;
 	font-size: 14px;
@@ -734,7 +732,7 @@ button.close_modal{
 
 }
 
-#disputeModal strong{
+.dispute_modal strong{
 	color: #000000;
 }
 

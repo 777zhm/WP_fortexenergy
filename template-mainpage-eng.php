@@ -8,7 +8,7 @@
 				<h1>Reliable supplier of gas and electricity for local and foreign consumers</h1>
 				<p class="section_subheading">Modern energy-resource company which understands the needs of customers</p>
 				<button class="btn_filled">Our tariffs</button>
-				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
+				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
 			</div>
 			<div class="heroscreen_bg col-lg-5" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
 				
@@ -66,22 +66,22 @@
 
 <div class="row justify-content-center">
 	<div class="col-md-6 equal">
-		<div class="product_item row">
-			<div class="product_gas_icon col-4">
+		<div class="product_item">
+			<div class="product_gas_icon">
 			</div>
-			<div class="product_gas_text col-8">
+			<div class="product_gas_text">
 				<h3><a href="/en/natural-gas/">Gas</a></h3>
-				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
+				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6 equal">
-		<div class="product_item row">
-			<div class="product_electricity_icon col-4">
+		<div class="product_item">
+			<div class="product_electricity_icon">
 			</div>
-			<div class="product_electricity_text col-8">
+			<div class="product_electricity_text">
 				<h3><a href="/en/electricity/">Electricity</a></h3>
-				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
+				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
 			</div>
 		</div>
 	</div>
@@ -151,7 +151,7 @@
 					<div class="col-6 contact_telephone">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_mail.png') ?>" alt="icon_mail"></span><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_tel.png') ?>" alt="icon_tel"></span><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModal">Dispute settlement</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModalEng">Dispute settlement</button>
 					</div>
 					<div class="col-6 contact_schedule">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_schedule.png') ?>" alt="icon_schedule"></span>Mon-Thr: 09:00 - 18:00</p>
@@ -164,7 +164,7 @@
 						<form class="footer_form">
 							<input type="text" class="form-control" placeholder="Name" name="username" required>
 							<input type="email" class="form-control" placeholder="Email" name="useremail" required>
-							<input type="tel" class="form-control" placeholder="Telephone" name="usertelephone" required>
+							<input type="tel" class="form-control" placeholder="Phone" name="usertelephone" required>
 							<button type="submit" class="btn_filled footer_form_button_submit">Send</button>
 						</form>
 					</div>

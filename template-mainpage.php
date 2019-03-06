@@ -8,7 +8,7 @@
 				<h1>Надійний постачальник<br>енергоносіїв українським та закордонним споживачам</h1>
 				<p class="section_subheading">Сучасна енергетична компанія, що розуміє потреби клієнтів</p>
 				<button class="btn_filled">Дізнатися тарифи</button>
-				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModal">Приєднатися</button>
+				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModalUkr">Приєднатися</button>
 			</div>
 			<div class="heroscreen_bg col-lg-5" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
 				
@@ -65,22 +65,22 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-md-6 equal">
-				<div class="product_item row">
-					<div class="product_gas_icon col-4">
+				<div class="product_item">
+					<div class="product_gas_icon">
 					</div>
-					<div class="product_gas_text col-8">
+					<div class="product_gas_text">
 						<h3><a href="/pryrodnyy-haz">Природний газ</a></h3>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Підключитися</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalUkr">Підключитися</button>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 equal">
-				<div class="product_item row">
-					<div class="product_electricity_icon col-4">
+				<div class="product_item">
+					<div class="product_electricity_icon">
 					</div>
-					<div class="product_electricity_text col-8">
+					<div class="product_electricity_text">
 						<h3><a href="/elektroenerhiia">Електрична енергія</a></h3>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Підключитися</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalUkr">Підключитися</button>
 					</div>
 				</div>
 			</div>
@@ -90,49 +90,37 @@
 <section class="partners_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-md-10 col-sm-12">
+			<div class="сol-md-11 col-sm-12">
 				<h2 class="text-center">Постачальники</h2>
 				<p class="section_subheading">Ми цiнуємо наших постачальників за вибір нашої компанії та гарантуємо їм найкращі умови співпраці та бездоганний сервіс</p>
-				<p></p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<div class="partners partners_slider">
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-arcelor.png') ?>" alt="arcelor" />
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_1.png') ?>" alt="supplier_1" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/oboronprom-logo.png') ?>" alt="oboronprom" />
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_2.jpg') ?>" alt="supplier_2" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/kamelia-logo.png') ?>" alt="kamelia" />
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_3.jpg') ?>" alt="supplier_3" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/komo-logo.png') ?>" alt="komo" />	
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_4.png') ?>" alt="supplier_4" />	
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-volin.jpg') ?>" alt="volin" />
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_5.jpeg') ?>" alt="supplier_5" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/terrafood-logo.png') ?>" alt="terrafood" />
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_6.png') ?>" alt="supplier_6" />
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/galicia-logo.png') ?>" alt="galicia" />		
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_7.jpg') ?>" alt="supplier_7" />		
 					</div>
 					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-pankurchak.png') ?>" alt="pankurchak" />	
-					</div>
-					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/gavtkurch-logo.png') ?>" alt="gavtkurch" />		
-					</div>
-					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/cheaseclub-logo.png') ?>" alt="cheaseclub" />		
-					</div>
-					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-spetstechno.png') ?>" alt="spetstechno" />		
-					</div>
-					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-rsz.png') ?>" alt="rsz" />	
-					</div>
-					<div class="partner_item">
-						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />		
+						<img class="img img-fluid" src="<?php assets_url('img/suppliers/suplier_8.png') ?>" alt="supplier_8" />	
 					</div>
 				</div>
 			</div>
@@ -188,10 +176,13 @@
 <section class="partners_section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 col-md-10 col-sm-12">
+			<div class="сol-md-11 col-sm-12">
 				<h2 class="text-center">Партнери</h2>
 				<p class="section_subheading">Ми цiнуємо наших партнерів за вибір нашої компанії та гарантуємо їм найкращі умови співпраці та бездоганний сервіс</p>
-				<p></p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-md-10 col-sm-12">
 				<div class="partners partners_slider">
 					<div class="partner_item">
 						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-arcelor.png') ?>" alt="arcelor" />
@@ -248,7 +239,7 @@
 					<div class="col-6 contact_telephone">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_mail.png') ?>" alt="icon_mail"></span><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_tel.png') ?>" alt="icon_tel"></span><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModal">Вирішення спорів</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModalUkr">Вирішення спорів</button>
 					</div>
 					<div class="col-6 contact_schedule">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_schedule.png') ?>" alt="icon_schedule"></span>Пн-Чт: 09:00 - 18:00</p>
