@@ -22,6 +22,7 @@ html { font-family: 'Inter', sans-serif; }
 	background: #E9E9E9;
 	background: #C4C4C4;
 	background: #29D19A;
+	background: #79d342;
 	background: #62758C;
 	background: #2A3540;
 }
@@ -554,6 +555,14 @@ header a:hover, footer a:hover{
 
 .advantages_item{
 	margin-bottom: 20px;
+}
+
+.advantage_heading{
+	color: #29D19A;
+}
+
+span.timer{
+	color: #29D19A;
 }
 /* End advantages_section */
 /* Start partners_section */

@@ -83,7 +83,7 @@
 			<div class="col-lg-12">
 				<h3>Споживачам:</h3>
 				<ul class="docs_list">
-					<li><a target="_b" href="docs/ТИПОВИЙ_ДОГ_ПОСТ_ГАЗ.docx" target="_blank" rel="noopener">Договір постачання природного газу</a></li>
+					<li><a target="_b" href="https://fortexenergy.com/wp-content/uploads/2019/03/fortex_dog_post_gas.docx" target="_blank" rel="noopener">Договір постачання природного газу</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-12 text-center buttons_box">

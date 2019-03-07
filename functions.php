@@ -28,7 +28,6 @@ function theme_scripts() {
 	wp_enqueue_style( 'owl-carousel-style', get_template_directory_uri().'/assets/js/owl/owl.carousel.css' );
 	wp_enqueue_style( 'owl-carousel-theme-style', get_template_directory_uri().'/assets/js/owl/owl.theme.css' );
 	wp_enqueue_style( 'owl-carousel-transitions-style', get_template_directory_uri().'/assets/js/owl/owl.transitions.css' );
-	wp_enqueue_style( 'fontawesome-style', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );
 
 	wp_enqueue_style( 'main-style', get_stylesheet_uri() );
 
@@ -38,12 +37,21 @@ function theme_scripts() {
 	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', array(), '3.3.1', true );
 	wp_enqueue_script( 'popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js', array(), '1.14.6', true );
 	wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array(), '4.2.1', true );
-	
 	wp_enqueue_script('owl-carousel-js', get_template_directory_uri()."/assets/js/owl/owl.carousel.min.js", array('jquery'), '', true );
-   
+	wp_enqueue_script('countTo-js', get_template_directory_uri()."/assets/js/jquery.countTo.js", array('jquery'), '', true );
+
+
 	wp_enqueue_script('main_js', get_template_directory_uri()."/assets/js/main.js", array('jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
+
+
+function zhm_wow_init() {
+    wp_register_script( 'wow', get_stylesheet_directory_uri() . '/assets/js/wow.min.js' );
+    wp_enqueue_script( 'my-wow', get_stylesheet_directory_uri() . '/assets/js/my-wow.js', array( 'wow' ), null, true );
+    wp_enqueue_style( 'wow-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' );
+}
+add_action( 'wp_enqueue_scripts', 'zhm_wow_init' );
 
 /**
  * Add integrity/crossorigin for CDN theme styles.
@@ -54,10 +62,6 @@ function theme_style_loader_tag( $html, $handle ) {
 		array(
 			( 'name' )      => 'bootstrap-style',
 			( 'integrity' ) => 'sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS',
-		),
-		array(
-			( 'name' )      => 'fontawesome-style',
-			( 'integrity' ) => 'sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP',
 		)
 	);
 	$key = array_search( $handle, array_column( $scripts_to_load, 'name' ) );

@@ -62,7 +62,7 @@
 				<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
-				<p>У випадку виникнення будь-яких спірних питань, будь ласка звертайтеся за адресою: 02000, м. Київ, вул. вул. Жилянська 75, БЦ "Эвразія" (11 поверх), з вівторка по четвер з 14:00 до 17:00 або за телефоном <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
+				<p>У випадку виникнення будь-яких спірних питань, будь ласка звертайтеся за адресою: 02000, м. Київ, вул. Жилянська 75, БЦ "Эвразія" (11 поверх), з вівторка по четвер з 14:00 до 17:00 або за телефоном<br> <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
 				<p>Особа, відповідальна за врегулювання спорів та суперечок: <span class="colored_text">Директор</span> <strong>Момот Олександр Павлович</strong>.</p>
 			</div>
 		</div>
@@ -78,8 +78,8 @@
 				<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
-				<p>In case of any disputable issues, please contact: 02000, Zhylianska st. 75, Kyiv, business center "Eurasia" (floor 11) from Tuesday to Thursday 14:00 - 17:00 or by phone <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
-				<p>Person responsible for settling disputes: <span class="colored_text">Director</span> <strong>Momot Alexandr</strong>.</p>
+				<p>In case of any disputable issues, please contact:<br> Zhylianska st. 75, Kyiv, business center "Eurasia" (floor 11) from Tuesday to Thursday 14:00 - 17:00 or by phone<br> <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
+				<p>Person responsible for settling disputes:<br><span class="colored_text">Director</span> <strong>Momot Alexandr</strong>.</p>
 			</div>
 		</div>
 	</div>
