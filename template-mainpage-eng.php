@@ -68,7 +68,7 @@
 					<img src="<?php assets_url('img/advantage_icon_1.svg') ?>" alt="advantage_icon_1">
 				</div>
 				<div>
-					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50"></span> Years</h4>
+					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50">5</span> Years</h4>
 					<p class="advantage_subheading">natural gas experiene in Ukraine market</p>
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 					<img src="<?php assets_url('img/advantage_icon_2.svg') ?>" alt="advantage_icon_2">
 				</div>
 				<div>
-					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="3" data-speed="5000" data-refresh-interval="50"></span> Years</h4>
+					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="3" data-speed="5000" data-refresh-interval="50">3</span> Years</h4>
 					<p class="advantage_subheading">trading experience</p>
 				</div>
 			</div>
@@ -86,7 +86,7 @@
 					<img src="<?php assets_url('img/advantage_icon_3.svg') ?>" alt="advantage_icon_3">
 				</div>
 				<div>
-					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="50" data-speed="5000" data-refresh-interval="50"></span>+ Suppliers</h4>
+					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="50" data-speed="5000" data-refresh-interval="50">50</span>+ Suppliers</h4>
 					<p class="advantage_subheading">deal with 50+ different suppliers</p>
 				</div>
 			</div>
@@ -95,7 +95,7 @@
 					<img src="<?php assets_url('img/advantage_icon_4.svg') ?>" alt="advantage_icon_4">
 				</div>
 				<div>
-					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="20" data-speed="5000" data-refresh-interval="50"></span>+ Clients</h4>
+					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="20" data-speed="5000" data-refresh-interval="50">20</span>+ Clients</h4>
 					<p class="advantage_subheading">supplied around 20 clients</p>
 				</div>
 			</div>
@@ -104,7 +104,7 @@
 					<img src="<?php assets_url('img/advantage_icon_5.svg') ?>" alt="advantage_icon_5">
 				</div>
 				<div>
-					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="25" data-speed="5000" data-refresh-interval="50"></span> Millions m<sup>3</sup></h4>
+					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="25" data-speed="5000" data-refresh-interval="50">25</span> Millions m<sup>3</sup></h4>
 					<p class="advantage_subheading">annual gas supplies<br>(2,1 mil. m<sup>3</sup>/month)</p>
 				</div>
 			</div>
