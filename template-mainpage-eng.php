@@ -16,7 +16,7 @@
 		</div>
 	</div>
 </section>
-<section class="company_section wow fadeInUp" data-wow-delay="2s" data-wow-duration="1">
+<section class="company_section wow fadeInUp d-none d-md-block" data-wow-delay="2s" data-wow-duration="1">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-md-10 col-sm-12">
@@ -122,7 +122,7 @@
 		<div class="row justify-content-center">
 			<div class="col-md-6 equal">
 				<div class="product_item">
-					<div class="product_gas_icon">
+					<div class="product_gas_icon d-none d-md-block">
 					</div>
 					<div class="product_gas_text">
 						<h3><a href="/en/natural-gas/">Gas</a></h3>
@@ -132,7 +132,7 @@
 			</div>
 			<div class="col-md-6 equal">
 				<div class="product_item">
-					<div class="product_electricity_icon">
+					<div class="product_electricity_icon d-none d-md-block">
 					</div>
 					<div class="product_electricity_text">
 						<h3><a href="/en/electricity/">Electricity</a></h3>

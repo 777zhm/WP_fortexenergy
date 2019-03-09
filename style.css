@@ -927,6 +927,24 @@ section.aboutus_mainscreen{
 /* Start max-width: 575px */
 @media (max-width: 575px)  {
 
+h1{
+	font-size: 1.5em;
+	margin-bottom: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 1.875em;
+	margin-bottom: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.company_section, .products_section, .partners_section{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
 } /* End max-width: 575px */
 /*** End Media query ***/
