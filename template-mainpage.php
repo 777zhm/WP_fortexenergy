@@ -5,8 +5,8 @@
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="heroscreen_box col-lg-7">
-				<h1>Надійний постачальник<br>енергоносіїв українським та закордонним споживачам</h1>
-				<p class="section_subheading">Сучасна енергетична компанія, що розуміє потреби клієнтів</p>
+				<h1>Надійний постачальник газу та електроенерії</h1>
+				<p class="section_subheading">Сучасна енергетична компанія</p>
 				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModalUkr">Дізнатися тарифи</button>
 				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalUkr">Консультація</button>
 			</div>

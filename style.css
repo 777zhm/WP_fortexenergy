@@ -67,6 +67,7 @@ h2{
 	font-size: 2.75em;
 	margin-bottom: 30px;
 	text-align: center;
+	text-transform: none;
 }
 
 h3{
@@ -411,7 +412,7 @@ header a:hover, footer a:hover{
 
 /* End decorative */
 /** Start Main page **/
-.company_section, .products_section, .partners_section{
+.company_section, .advantages_section, .products_section, .partners_section{
 	padding-top: 70px;
 	padding-bottom: 50px;
 }
@@ -429,7 +430,7 @@ header a:hover, footer a:hover{
 
 .heroscreen_section .section_subheading{
 	font-weight: 600;
-	line-height: 32px;
+	line-height: 26px;
 	font-size: 18px;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
@@ -872,6 +873,38 @@ section.aboutus_mainscreen{
 	text-decoration-color: #29D19A;
 }
 
+
+.payment_item_1 h3, .payment_item_1 p{
+	color: #ffffff;
+	
+}
+
+.payment_item_2 h3, .payment_item_2 p{
+	color: #ffffff;
+}
+
+.payment_item_3 h3, .payment_item_3 p{
+	color: #ffffff;
+}
+
+.payment_item_1{
+	border-radius: 5px;
+	background-color: #62758C;
+	padding: 16px 10px;
+}
+
+.payment_item_2{
+	border-radius: 5px;
+	background-color: #29D19A;
+	padding: 16px 10px;
+}
+
+.payment_item_3{
+	border-radius: 5px;
+	background-color: #009E6B;
+	padding: 16px 10px;
+}
+
 /** End Gas/Energy/Dispute page **/
 /*** Start Media query ***/
 /* Start max-width: 992px and min-width: 1199px */
@@ -928,22 +961,29 @@ section.aboutus_mainscreen{
 @media (max-width: 575px)  {
 
 h1{
-	font-size: 1.5em;
+	font-size: 1.375em;
 	margin-bottom: 20px;
-	line-height: 30px;
+	line-height: 22px;
 	text-transform: uppercase;
 }
 
 h2{
-	font-size: 1.875em;
+	font-size: 1.5em;
 	margin-bottom: 20px;
-	line-height: 30px;
+	line-height: 24px;
 	text-align: center;
 }
 
 .company_section, .products_section, .partners_section{
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+
+.heroscreen_section .section_subheading {
+    margin-bottom: 6px;
+    line-height: 18px;
+	font-size: 18px;
 }
 
 } /* End max-width: 575px */

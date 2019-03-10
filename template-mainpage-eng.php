@@ -5,8 +5,8 @@
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="heroscreen_box col-lg-7">
-				<h1>Reliable supplier of gas and electricity for local and foreign consumers</h1>
-				<p class="section_subheading">Modern energy-resource company which understands the needs of customers</p>
+				<h1>Reliable supplier of gas and electricity</h1>
+				<p class="section_subheading">Modern energy-resource company</p>
 				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModalUkr">Our tariffs</button>
 				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
 			</div>
@@ -116,7 +116,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-md-10 col-sm-12">
 				<h2 class="text-center">Services</h2>
-				<p class="section_subheading">FORTEX ENERGY is an energy-resource company whose activity is timely and flawless supply of natural gas and electricity to consumers</p>
+				<!-- <p class="section_subheading">FORTEX ENERGY is an energy-resource company whose activity is timely and flawless supply of natural gas and electricity to consumers</p> -->
 			</div>
 		</div>
 		<div class="row justify-content-center">
