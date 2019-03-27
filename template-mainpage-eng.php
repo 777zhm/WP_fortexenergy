@@ -5,9 +5,9 @@
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="heroscreen_box col-lg-7">
-				<h1>Reliable supplier of gas and electricity</h1>
+				<h1>Reliable supplier of<br>gas and electricity</h1>
 				<p class="section_subheading">Modern energy-resource company</p>
-				<button class="btn_base" type="button" data-toggle="modal" data-target="#consultationModalUkr">Our tariffs</button>
+				<button class="btn_base" type="button" data-toggle="modal" data-target="#tariffsModalEng">Our tariffs</button>
 				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
 			</div>
 			<div class="heroscreen_bg col-lg-5" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
@@ -69,7 +69,7 @@
 				</div>
 				<div>
 					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50">5</span> Years</h4>
-					<p class="advantage_subheading">natural gas experiene in Ukraine market</p>
+					<p class="advantage_subheading">natural gas experience in Ukraine market</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 advantages_item">
@@ -96,7 +96,7 @@
 				</div>
 				<div>
 					<h4 class="advantage_heading"><span class="timer" data-from="0" data-to="20" data-speed="5000" data-refresh-interval="50">20</span>+ Clients</h4>
-					<p class="advantage_subheading">supplied around 20 clients</p>
+					<p class="advantage_subheading">supplied more than 20 clients</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 advantages_item">

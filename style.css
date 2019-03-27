@@ -782,6 +782,43 @@ button.close_modal{
 }
 
 /* End Modal Dispute */
+/* Start Modal Tariffs */
+.tariffs_modal .modal-content{
+	padding: 7px 10px 10px 10px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.1);
+	border: none;
+	border-radius: 10px;
+	color: #62758C;
+}
+
+.tariffs_modal .modal-header{
+	border-bottom: none;
+}
+
+.tariffs_modal .modal-title{
+	margin: auto;
+	font-weight: bold;
+	line-height: 23px;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.5px;
+
+	color: #2A3540;
+	text-transform: none;
+}
+
+.tariffs_modal .modal-body{
+	font-weight: 600;
+	line-height: 17px;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.5px;
+
+	color: #62758C;
+	padding: 0;
+}
+/* End Modal Tariffs */
 /** Start Aboutus page **/
 section.aboutus_mainscreen{
 	background: url('img/about_bg.jpg') center bottom no-repeat;
@@ -873,36 +910,37 @@ section.aboutus_mainscreen{
 	text-decoration-color: #29D19A;
 }
 
-
-.payment_item_1 h3, .payment_item_1 p{
-	color: #ffffff;
-	
+.payment_item{
+	border-radius: 5px;
+	padding: 16px 20px;
+	max-width: 450px;
+	margin: 16px auto;
+	text-align: center;
 }
 
-.payment_item_2 h3, .payment_item_2 p{
+.payment_item h3, .payment_item p{
 	color: #ffffff;
+	font-weight: 600;
 }
 
-.payment_item_3 h3, .payment_item_3 p{
-	color: #ffffff;
+.payment_item p{
+	margin-bottom: 4px;
+}
+
+.payment_item h3:hover{
+	color: #2A3540;
 }
 
 .payment_item_1{
-	border-radius: 5px;
 	background-color: #62758C;
-	padding: 16px 10px;
 }
 
 .payment_item_2{
-	border-radius: 5px;
 	background-color: #29D19A;
-	padding: 16px 10px;
 }
 
 .payment_item_3{
-	border-radius: 5px;
 	background-color: #009E6B;
-	padding: 16px 10px;
 }
 
 /** End Gas/Energy/Dispute page **/
