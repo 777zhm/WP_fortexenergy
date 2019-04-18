@@ -8,7 +8,7 @@
 				<h1>Reliable supplier of<br>gas and electricity</h1>
 				<p class="section_subheading">Modern energy-resource company</p>
 				<button class="btn_base" type="button" data-toggle="modal" data-target="#tariffsModalEng">Our tariffs</button>
-				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
+				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
 			</div>
 			<div class="heroscreen_bg col-lg-5" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
 				
@@ -126,7 +126,7 @@
 					</div>
 					<div class="product_gas_text">
 						<h3><a href="/en/natural-gas/">Gas</a></h3>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
 					</div>
 				</div>
 			</div>
@@ -136,7 +136,7 @@
 					</div>
 					<div class="product_electricity_text">
 						<h3><a href="/en/electricity/">Electricity</a></h3>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Join us</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Join us</button>
 					</div>
 				</div>
 			</div>
@@ -262,12 +262,7 @@
 				</div>
 				<div class="row contacts_form_row justify-content-center">
 					<div class="col-12">
-						<form class="footer_form">
-							<input type="text" class="form-control" placeholder="Name" name="username" required>
-							<input type="email" class="form-control" placeholder="Email" name="useremail" required>
-							<input type="tel" class="form-control" placeholder="Phone" name="usertelephone" required>
-							<button type="submit" class="btn_filled footer_form_button_submit">Send</button>
-						</form>
+						<?php echo do_shortcode( '[contact-form-7 id="177" title="form_consalting_name_eng"]' ); ?>
 					</div>
 				</div>
 			</div>

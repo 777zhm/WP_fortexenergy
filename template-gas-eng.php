@@ -87,7 +87,7 @@
 				</ul>
 			</div>
 			<div class="col-lg-12 text-center buttons_box">
-				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalEng">Отримайте консультацiю</button>
+				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Отримайте консультацiю</button>
 			</div>
 		</div>
 	</div>

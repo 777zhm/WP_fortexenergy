@@ -8,7 +8,7 @@
 				<h1>Надійний постачальник<br>газу та електроенерії</h1>
 				<p class="section_subheading">Сучасна енергетична компанія</p>
 				<button class="btn_base" type="button" data-toggle="modal" data-target="#tariffsModalUkr">Дізнатися тарифи</button>
-				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalUkr">Консультація</button>
+				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Консультація</button>
 			</div>
 			<div class="heroscreen_bg col-lg-5" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
 				
@@ -125,7 +125,7 @@
 					</div>
 					<div class="product_gas_text">
 						<h3><a href="/pryrodnyy-haz">Природний газ</a></h3>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalUkr">Підключитися</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Підключитися</button>
 					</div>
 				</div>
 			</div>
@@ -135,7 +135,7 @@
 					</div>
 					<div class="product_electricity_text">
 						<h3><a href="/elektroenerhiia">Електрична енергія</a></h3>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModalUkr">Підключитися</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Підключитися</button>
 					</div>
 				</div>
 			</div>
@@ -261,12 +261,7 @@
 				</div>
 				<div class="row contacts_form_row justify-content-center">
 					<div class="col-12">
-						<form class="footer_form">
-							<input type="text" class="form-control" placeholder="Ім'я" name="username" required>
-							<input type="email" class="form-control" placeholder="Електронна адреса" name="useremail" required>
-							<input type="tel" class="form-control" placeholder="Телефон" name="usertelephone" required>
-							<button type="submit" class="btn_filled footer_form_button_submit">Відправити</button>
-						</form>
+						<?php echo do_shortcode( '[contact-form-7 id="175" title="form_consalting_name_ukr"]' ); ?>
 					</div>
 				</div>
 			</div>

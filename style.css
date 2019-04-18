@@ -604,12 +604,12 @@ span.timer{
 	max-width: 20px;
 }
 
-.footer_form{
+.contacts_form_row form{
 	width: 100%;
 	padding-right: 40px;
 }
 
-.footer_form input{
+.contacts_form_row input{
 	height: 50px;
 
 	border: 1px solid #D3DEEC;
@@ -621,11 +621,11 @@ span.timer{
 	line-height: normal;
 	font-size: 12px;
 	letter-spacing: 0.5px;
-	color: #A6B9CF;
+	/*color: #A6B9CF;*/
 	
 	padding-left: 24px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .footer_form_button_submit{
@@ -705,11 +705,11 @@ span.timer{
 	line-height: normal;
 	font-size: 12px;
 	letter-spacing: 0.5px;
-	color: #A6B9CF;
+	/*color: #A6B9CF;*/
 	
 	padding-left: 24px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .form_modal .modal_button_submit{
