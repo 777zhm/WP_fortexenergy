@@ -1,28 +1,46 @@
-<?php $image = get_field('image'); ?>
-<section>
-	<div class="container-fluid mainscreen_block" style="background-image: url('<?php echo $image['url']; ?>');">
-		<div class="row">
-			<div class="col-12 ms_heading">
-				<h1 style="text-align: center;"><?php the_field('heading'); ?></h1>
+<section class="heroscreen_section wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="heroscreen_box col-lg-7">
+				<h1>Надійний постачальник<br>газу та електроенерії</h1>
+				<p class="section_subheading">Сучасна енергетична компанія</p>
+				<button class="btn_base" type="button" data-toggle="modal" data-target="#tariffsModalUkr">Дізнатися тарифи</button>
+				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Консультація</button>
+			</div>
+			<div class="heroscreen_bg col-lg-5" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
+				
 			</div>
 		</div>
-		<?php if( have_rows('features') ): ?>
-			<div class="row justify-content-center text-center ms_benefits">
-				<?php while( have_rows('features') ): the_row(); 
-					$icon = get_sub_field('icon');
-					?>
-					<div class="col-md-3">
-						<?php if($icon): ?>
-						<img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt'] ?>" />
-						<?php endif; ?>
-						<div><?php the_sub_field('heading'); ?></div>
+	</div>
+</section>
+
+
+
+
+
+<section>
+	<div class="heroscreen_section" style="background-image: url(<?php assets_url('img/heroscreen_bg.jpg') ?>);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="h1_box">
+						<h1><?php the_field('section_heading');?></h1>
 					</div>
-				<?php endwhile; ?>
-			</div>
-		<?php endif; ?>
-		<div class="row justify-content-center text-center">
-			<div class="col-12 scrolldown">
-				<img src="<?php assets_url('img/scrolldown_icon.png') ?>" alt="scrolldown_icon">
+				</div>
+				<div class="col-md-6">
+					<div class="form_content">
+						<div class="form_header">
+							<h4 class="form_title"><?php the_field('form_title');?></h4>
+						</div>
+						<div class="form_body">
+							<?php if (get_locale() == 'uk'){ ?>
+								<?php echo do_shortcode( '[contact-form-7 id="198" title="form_driver_ukr"]' ); ?>
+							<?php }elseif (get_locale() == 'ru_RU'){ ?>
+								<?php echo do_shortcode( '[contact-form-7 id="88" title="form_driver_rus"]' ); ?>
+							<?php } ?>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
