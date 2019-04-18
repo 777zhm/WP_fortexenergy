@@ -16,52 +16,59 @@
 <div class="modal fade form_modal" id="consultationModal" tabindex="-1" role="dialog" aria-labelledby="consultationModal" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">		
 		<div class="modal-content">
-			<div class="modal-header">
-				<h4 class="modal-title"><span class="down_arrow_box"><img src="<?php assets_url('img/down_arrow.png') ?>" alt="down_arrow"></span>Консультація</h4>
-			</div>
-			<div class="modal-body">
-				<?php if (get_locale() == 'uk'){ ?>
+
+			<?php if (get_locale() == 'uk'){ ?>
+				<div class="modal-header">
+					<h4 class="modal-title"><span class="down_arrow_box"><img src="<?php assets_url('img/down_arrow.png') ?>" alt="down_arrow"></span><?php the_field('modal_form_title_ukr');?></h4>
+				</div>
+				<div class="modal-body">
 					<?php echo do_shortcode( '[contact-form-7 id="174" title="form_consalting_edrpou_ukr"]' ); ?>
-				<?php }elseif (get_locale() == 'en_GB'){ ?>
+				</div>
+
+			<?php }elseif (get_locale() == 'en_GB'){ ?>
+				<div class="modal-header">
+					<h4 class="modal-title"><span class="down_arrow_box"><img src="<?php assets_url('img/down_arrow.png') ?>" alt="down_arrow"></span><?php the_field('modal_form_title_eng');?></h4>
+				</div>
+				<div class="modal-body">
 					<?php echo do_shortcode( '[contact-form-7 id="176" title="form_consalting_edrpou_eng"]' ); ?>
-				<?php } ?>
-			</div>
+				</div>
+			<?php } ?>
+
 		</div>
 	</div>
 </div>
 <!-- End Modal Forms -->
-<!-- Start Modal Dispute UKR -->
-<div class="modal fade dispute_modal" id="disputeModalUkr" tabindex="-1" role="dialog" aria-labelledby="disputeModalUkr" aria-hidden="true">
+<!-- Start Modal Dispute -->
+<div class="modal fade dispute_modal" id="disputeModal" tabindex="-1" role="dialog" aria-labelledby="disputeModal" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
+
+			<?php if (get_locale() == 'uk'){ ?>
 			<div class="modal-header">
-				<h4 class="modal-title">Вирішення спорів</h4>
+				<h4 class="modal-title"><?php the_field('button_disputes_ukr', 'theme_settings');?></h4>
 				<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
 				<p>У випадку виникнення будь-яких спірних питань, будь ласка звертайтеся за адресою: 02000, м. Київ, вул. Жилянська 75, БЦ "Эвразія" (11 поверх), з вівторка по четвер з 14:00 до 17:00 або за телефоном<br> <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
 				<p>Особа, відповідальна за врегулювання спорів та суперечок: <span class="colored_text">Директор</span> <strong>Момот Олександр Павлович</strong>.</p>
 			</div>
-		</div>
-	</div>
-</div>
-<!-- End Modal Dispute UKR -->
-<!-- Start Modal Dispute ENG-->
-<div class="modal fade dispute_modal" id="disputeModalEng" tabindex="-1" role="dialog" aria-labelledby="disputeModalEng" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
+
+			<?php }elseif (get_locale() == 'en_GB'){ ?>
 			<div class="modal-header">
-				<h4 class="modal-title">Disputes</h4>
+				<h4 class="modal-title"><?php the_field('button_disputes_eng', 'theme_settings');?></h4>
 				<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
 				<p>In case of any disputable issues, please contact:<br> Zhylianska st. 75, Kyiv, business center "Eurasia" (floor 11) from Tuesday to Thursday 14:00 - 17:00 or by phone<br> <a href="tel:+380442289601">+38 (044) 228 96 01</a>.</p>
 				<p>Person responsible for settling disputes:<br><span class="colored_text">Director</span> <strong>Momot Olexandr</strong>.</p>
 			</div>
+			<?php } ?>
+
 		</div>
 	</div>
 </div>
-<!-- End Modal Dispute ENG -->
+<!-- End Modal Dispute -->
+
 
 <!-- Start Modal Tariffs UKR-->
 <div class="modal fade tariffs_modal" id="tariffsModalUkr" tabindex="-1" role="dialog" aria-labelledby="tariffsModalUkr" aria-hidden="true">

@@ -234,6 +234,9 @@
 						<img class="img img-fluid" src="<?php assets_url('img/partners/logo-rsz.png') ?>" alt="rsz" />	
 					</div>
 					<div class="partner_item">
+						<img class="img img-fluid" src="<?php assets_url('img/partners/logo_kievchem.png') ?>" alt="logo_kievchem" />	
+					</div>
+					<div class="partner_item">
 						<img class="img img-fluid" src="<?php assets_url('img/partners/gastrans-logo.jpg') ?>" alt="gastrans" />
 					</div>
 				</div>
@@ -252,7 +255,7 @@
 					<div class="col-sm-6 contact_telephone">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_mail.png') ?>" alt="icon_mail"></span><a href = "mailto: info@fortexenergy.com">info@fortexenergy.com</a></p>
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_tel.png') ?>" alt="icon_tel"></span><a href="tel:+380442289601">+38 (044) 228 96 01</a></p>
-						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModalEng">Disputes</button>
+						<button class="btn_filled" type="button" data-toggle="modal" data-target="#disputeModal">Disputes</button>
 					</div>
 					<div class="col-sm-6 contact_schedule">
 						<p><span class="contacts_icon_box"><img src="<?php assets_url('img/icon_schedule.png') ?>" alt="icon_schedule"></span>Mon-Thr: 09:00 - 18:00</p>
