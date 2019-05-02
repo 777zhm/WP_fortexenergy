@@ -7,7 +7,7 @@
 			<div class="heroscreen_box col-lg-7">
 				<h1>Надійний постачальник<br>газу та електроенерії</h1>
 				<p class="section_subheading">Сучасна енергетична компанія</p>
-				<button class="btn_base" type="button" data-toggle="modal" data-target="#tariffsModalUkr">Дізнатися тарифи</button>
+				<button class="btn_base" type="button" data-toggle="modal" data-target="#tariffsModalUkr">Тарифи</button>
 				<button class="btn_filled" type="button" data-toggle="modal" data-target="#consultationModal">Консультація</button>
 			</div>
 			<div class="heroscreen_bg col-lg-5" style="background-image: url(<?php assets_url('img/heroscreen_bg.svg') ?>);">
